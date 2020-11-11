@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артур Ткаченко](https://up.htmlacademy.ru/adaptive/21/user/1546583).
-* Наставник: `Неизвестно`.
+* Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb)
 
 ---
 
