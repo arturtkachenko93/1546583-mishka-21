@@ -25,6 +25,14 @@
             <a href="#">Вязание на заказ</a>
           </li>
         </ul>
+        <ul class="header-nav__list site-list-desk">
+          <li class="site-list-desk__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="site-list-desk__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
         <div class="header-nav__list user-list">
           <a href="#">
             <svg class="user-list__search-icon" width="18" height="18"></svg>
@@ -37,14 +45,16 @@
             Корзина: пока пуста
           </a>
         </div>
+        <p>Бесплатная доставка по России</p>
       </div>
     </nav>
   </header>
 
   <main class="page__main catalog-main">
     <h1 class="catalog-main__title">Каталог товаров</h1>
-    <article class="product">
-      <div class="product__wrapper">
+    <div class="container">
+      <section class="product">
+        <h2 class="visually-hidden">Список карточек товара сайта Мишка</h2>
         <ul class="product__item">
           <li class="product__list">
             <a class="product__product-image" href="#">
@@ -52,7 +62,7 @@
                 alt="Фотография куклы зайчик-попрыгайчик">
             </a>
             <a class="product__product_title" href="#">
-              <h2>Зайчик-попрыгайчик</h2>
+              <h3>Зайчик-попрыгайчик</h3>
             </a>
             <span class="product__property">Рост 30 см, вес 200 г</span>
             <b class="product__price">1200 руб.</b>
@@ -63,7 +73,7 @@
                 alt="Фотография корзинки для белья">
             </a>
             <a class="product__product_title" href="#">
-              <h2>Корзинка для белья</h2>
+              <h3>Корзинка для белья</h3>
             </a>
             <span class="product__property">Диаметр 15 см, высота 10 см</span>
             <b class="product__price">690 руб.</b>
@@ -74,25 +84,23 @@
                 alt="Фотография корзинки для игрушек">
             </a>
             <a class="product__product_title" href="#">
-              <h2>Большая корзинка для игрушек</h2>
+              <h3>Большая корзинка для игрушек</h3>
             </a>
             <span class="product__property">Диаметр 30 см, высота 30 см</span>
             <b class="product__price">1500 руб.</b>
           </li>
         </ul>
-      </div>
-    </article>
-    <article class="video-production">
-      <div class="video-production__wrapper">
-        <h2 class="video-production__title">Процесс производства</h2>
-        <img class="video-production__image" src="../source/img/video-mobile-1.jpg" width="260" height="150"
-          alt="Картинка из видео производства">
-        <svg></svg>
-        <p class="video-production__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-          как появляются наши товары.</p>
-      </div>
-    </article>
-    <a class="catalog-main__button button" href="#">Сделать заказ</a>
+    </section>
+    <section class="video-production">
+      <h2 class="video-production__title">Процесс производства</h2>
+      <img class="video-production__image" src="../source/img/video-mobile-1.jpg" width="260" height="150"
+        alt="Картинка из видео производства">
+      <svg></svg>
+      <p class="video-production__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+        как появляются наши товары.</p>
+      <a class="catalog-main__button button" href="#">Сделать заказ</a>
+    </section>
+    </div>
   </main>
 
   <footer class="page__footer page-footer">
