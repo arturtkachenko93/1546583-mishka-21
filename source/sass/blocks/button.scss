@@ -1,0 +1,43 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 260px;
+  padding: 16px 70px;
+  background-color: $white;
+  border: 2px solid $gray;
+  font-size: 18px;
+  line-height: 20px;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    font-size: 17px;
+    padding: 16px 86px;
+  }
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(0deg, $gray, $gray);
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    background: linear-gradient(0deg, $gray, $gray);
+  }
+
+  &--no-tel {
+    @media (min-width: $tablet-width) {
+    width: 175px;
+    padding: 16px 26px;
+    }
+  }
+
+  &--notel-contact {
+    @media (min-width: $tablet-width) {
+      width: 230px;
+      padding: 16px 28px 16px 26px;
+    }
+  }
+}

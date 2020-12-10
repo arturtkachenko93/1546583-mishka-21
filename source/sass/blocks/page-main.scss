@@ -1,0 +1,42 @@
+.main-header__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.main-header__list {
+  @include list-reset;
+}
+
+.main-header__item {
+  font-size: 19px;
+  height: 103px;
+
+  &--interior {
+    background-color: $turquoise;
+  }
+
+  &--toys {
+    background-color: $dark-turquoise;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    height: 119px;
+  }
+}
+
+.main-header__item-link {
+  color: $white;
+}
