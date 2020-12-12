@@ -15,7 +15,6 @@
 }
 
 .product__subtitle {
-  font-size: 17px;
   line-height: 20px;
   color: $turquoise;
   margin: 0;
@@ -27,12 +26,10 @@
 
 .product__desc {
   font-size: 15px;
-  line-height: 24px;
   font-weight: 400;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
     line-height: 30px;
   }
 }
@@ -46,8 +43,6 @@
 }
 
 .product__price {
-  font-size: 17px;
-  line-height: 24px;
   text-align: center;
   color: $gray;
   margin: 0;

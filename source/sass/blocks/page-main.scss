@@ -19,9 +19,13 @@
   @include list-reset;
 }
 
-.main-header__item {
+.main-header__item-link {
+  display: block;
+  box-sizing: border-box;
   font-size: 19px;
-  height: 103px;
+  color: $white;
+  width: 320px;
+  padding: 24px 160px 31px 30px;
 
   &--interior {
     background-color: $turquoise;
@@ -33,10 +37,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    height: 119px;
+    width: 334px;
+    padding: 25px 167px 34px 36px;
   }
-}
 
-.main-header__item-link {
-  color: $white;
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    padding: 25px 350px 34px 37px;
+  }
 }

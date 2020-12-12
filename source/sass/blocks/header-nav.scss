@@ -1,8 +1,3 @@
-.header-nav {
-  font-size: 17px;
-  line-height: 24px;
-}
-
 .site-list {
   @include list-reset;
 
@@ -17,7 +12,8 @@
   }
 }
 
-.site-list__link {
+.site-list__link,
+.site-list-desk__link {
   color: $black;
 
   &:hover {
@@ -54,13 +50,13 @@
 }
 
 .page-header__desc {
-  font-size: 15px;
-  font-weight: 400;
-  color: $gray;
-
-  &--no-mobile {
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    font-weight: 400;
+    color: $gray;
+    margin: 0;
   }
 }

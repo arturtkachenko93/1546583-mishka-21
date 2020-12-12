@@ -21,26 +21,17 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    font-size: 17px;
     line-height: 30px;
   }
 }
 
 .feedback__author-name {
-  font-size: 17px;
-  line-height: 24px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 17px;
-  }
-
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
 }
 
 .feedback__author-contact {
-  font-size: 17px;
   line-height: 30px;
   font-weight: 400;
 }
