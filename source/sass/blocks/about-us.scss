@@ -1,0 +1,28 @@
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}

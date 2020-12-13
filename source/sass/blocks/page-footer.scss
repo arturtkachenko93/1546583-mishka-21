@@ -1,0 +1,13 @@
+.page-footer {
+  background-color: $smoke-white;
+}
+
+.page-footer__social-list {
+  @include list-reset;
+}
+
+.page-footer__desc {
+  font-size: 19px;
+  line-height: 18px;
+  margin: 0;
+}

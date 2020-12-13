@@ -1,0 +1,53 @@
+.product__title {
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.product__subtitle {
+  line-height: 20px;
+  color: $turquoise;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+  }
+}
+
+.product__desc {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+}
+
+.product__parameter,
+.product__value {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.product__price {
+  text-align: center;
+  color: $gray;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
