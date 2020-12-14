@@ -1,0 +1,108 @@
+.filter__type,
+.filter__color-type,
+.filter__personal,
+.filter__contacts-form,
+.filter__input-area {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-main__title {
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  background-color: $smoke-white;
+  padding: 73px 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 57px 100px 63px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 58px 300px 79px 300px;
+  }
+}
+
+.form-main__desc {
+  font-size: 13px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.filter__title {
+  line-height: 16px;
+  color: $turquoise;
+  text-transform: uppercase;
+}
+
+.filter__list {
+  @include list-reset;
+
+  &--no-tel {
+    @media (min-width: $tablet-width) {
+      background-color: $smoke-white;
+    }
+  }
+}
+
+.filter__item {
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+input[placeholder],
+.filter__input-area {
+  color: rgba($black, 0.3);
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+input[type="tel"],
+input[type="email"] {
+  background-color: $smoke-white;
+}
+
+.filter__input-area {
+  width: 260px;
+  height: 142px;
+  border: 2px solid $gray;
+  padding: 17px 17px;
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    width: 501px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
+  }
+}
+
+.filter__footnote {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: $gray;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
