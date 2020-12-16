@@ -43,6 +43,7 @@
   line-height: 16px;
   color: $turquoise;
   text-transform: uppercase;
+  padding: 0;
 }
 
 .filter__list {
@@ -63,19 +64,23 @@
   }
 }
 
-input[placeholder],
+.filter__input-name,
 .filter__input-area {
+  width: 100%;
   color: rgba($black, 0.3);
   line-height: 18px;
+  border: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
+    width: auto;
     font-size: 19px;
+    background-color: $smoke-white;
   }
 }
 
-input[type="tel"],
-input[type="email"] {
-  background-color: $smoke-white;
+.filter__input-name {
+
 }
 
 .filter__input-area {
