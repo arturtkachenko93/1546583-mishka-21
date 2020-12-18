@@ -73,7 +73,7 @@
       </fieldset>
       <fieldset class="filter__color-type">
         <legend class="filter__title">Цвет</legend>
-        <ul class="filter__list">
+        <ul class="filter__list filter__list--no-tel">
           <li class="filter__item">
             <input class="visually-hidden filter__checkbox" type="checkbox" name="white" id="white" checked>
             <label class="filter__label" for="white">Белый</label>
@@ -105,34 +105,34 @@
         <ul class="filter__list">
           <li class="filter__item">
             <label class="filter__label" for="enter_name">Имя:</label>
-            <input class="filter__input-text" type="text" name="enter_name" placeholder="Введите ваше имя*" id="enter_name" required>
+            <input class="filter__input-name" type="text" name="enter_name" placeholder="Введите ваше имя*" id="enter_name" required>
           </li>
-          <li class="personal__item">
+          <li class="filter__item">
             <label class="filter__label" for="enter_lastname">Фамилия:</label>
-            <input class="filter__input-text" type="text" name="enter_lastname" placeholder="Укажите фамилию*" id="enter_lastname" required>
+            <input class="filter__input-name" type="text" name="enter_lastname" placeholder="Укажите фамилию*" id="enter_lastname" required>
           </li>
-          <li class="personal__item">
+          <li class="filter__item">
             <label class="filter__label" for="middle_name">Отчество:</label>
-            <input class="filter__input-text" type="text" name="middle_name" placeholder="Отчество, если желаете" id="middle_name" required>
+            <input class="filter__input-name" type="text" name="middle_name" placeholder="Отчество, если желаете" id="middle_name" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="filter__contacts-form">
-        <ul class="filter__list">
+        <ul class="filter__list filter__list--no-tel">
           <li class="filter__item">
             <label class="filter__title" for="tel">Тел</label>
-            <input class="filter__input-text" type="tel" name="tel" id="tel" pattern="[+7]{2}[0-9]{10}"
+            <input class="filter__input-name" type="tel" name="tel" id="tel" pattern="[+7]{2}[0-9]{10}"
             placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </li>
           <li class="filter__item">
             <label class="filter__title" for="email">E-mail</label>
-            <input class="filter__input-text" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            <input class="filter__input-name" type="email" name="email" id="email" placeholder="Ваш Email*" required>
           </li>
         </ul>
       </fieldset>
       <div class="filter__inner-form">
         <label class="filter__title" for="comment-field">Доп</label>
-        <textarea class="filter__input-area" name="comment" id="comment-field" rows="10">Опишите все ваши пожелания к заказу</textarea>
+        <textarea class="filter__input-area" name="comment" id="comment-field" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
       <cite class="filter__footnote">*Поля обязательны для заполнения</cite>
       <button class="filter__button button" type="submit">Отправить заказ</button>
