@@ -36,4 +36,18 @@
       width: 230px;
     }
   }
+
+  &--catalog {
+    @media (min-width: $mobile-width) {
+      width: 192px;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 582px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 230px;
+    }
+  }
 }
