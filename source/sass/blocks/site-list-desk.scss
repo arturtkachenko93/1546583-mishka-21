@@ -1,0 +1,5 @@
+.site-list-desk__item--desktop {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}

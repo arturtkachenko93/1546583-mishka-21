@@ -1,0 +1,20 @@
+.site-list {
+  @include list-reset;
+
+  &-desk {
+    @include list-reset;
+  }
+}
+
+.site-list__link,
+.site-list-desk__link {
+  color: $black;
+
+  &:hover {
+    color: rgba($black, 0.6);
+  }
+
+  &:active {
+    color: rgba($black, 0.3);
+  }
+}

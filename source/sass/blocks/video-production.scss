@@ -1,0 +1,16 @@
+.video-production__title {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.video-production__desc {
+  font-size: 13px;
+  color: $gray;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
