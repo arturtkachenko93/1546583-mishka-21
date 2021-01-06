@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 30px;
+    width: 100%;
   }
 }
 
@@ -18,4 +19,18 @@
 .feedback__author-contact {
   line-height: 30px;
   font-weight: 400;
+}
+
+.feedback__slide {
+  display: none;
+
+  &--show {
+    display: block;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -6,6 +6,7 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +17,11 @@
 
 .about-us__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about-us__item {
@@ -24,5 +30,6 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+    width: 50%;
   }
 }

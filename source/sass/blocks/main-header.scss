@@ -1,4 +1,10 @@
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .main-header__title {
+  width: auto;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -17,6 +23,17 @@
 
 .main-header__list {
   @include list-reset;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-header__item {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
 }
 
 .main-header__item-link {
@@ -24,8 +41,6 @@
   box-sizing: border-box;
   font-size: 19px;
   color: $white;
-  width: 320px;
-  padding: 24px 160px 31px 30px;
 
   &--interior {
     background-color: $turquoise;
@@ -37,12 +52,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    width: 334px;
-    padding: 25px 167px 34px 36px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 525px;
-    padding: 25px 350px 34px 37px;
   }
 }

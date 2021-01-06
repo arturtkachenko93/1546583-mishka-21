@@ -1,3 +1,11 @@
+.review__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 52px auto;
+  }
+}
+
 .review__title {
   font-size: 25px;
   line-height: 30px;
@@ -11,5 +19,45 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+  }
+}
+
+.review__button-wrapper {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.review__button {
+  &--prev {
+    background-image: url("../img/icons/huge-arrow-left.svg");
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 26px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  &--next {
+    background-image: url("../img/icons/huge-arrow-right.svg");
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 26px;
+    border: 0;
+    cursor: pointer;
+  }
+}
+
+.review__button-write {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
   }
 }

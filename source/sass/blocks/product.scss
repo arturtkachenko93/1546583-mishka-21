@@ -11,6 +11,8 @@
 }
 
 .product__list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   border: 1px solid $whisper;
 }
 

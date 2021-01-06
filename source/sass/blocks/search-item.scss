@@ -1,6 +1,12 @@
 .search-item__link {
   color: $black;
 
+  &--hidden {
+    @media (min-width: $tablet-width) {
+      font-size: 0;
+    }
+  }
+
   &:hover {
     color: rgba($black, 0.6);
   }

@@ -1,5 +1,18 @@
 .site-list-desk__item--desktop {
   @media (max-width: $desktop-width) {
+    font-size: 15px;
     display: none;
+  }
+}
+
+.site-list-desk__item:nth-child(1) {
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
+  }
+}
+
+.site-list-desk__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
   }
 }
