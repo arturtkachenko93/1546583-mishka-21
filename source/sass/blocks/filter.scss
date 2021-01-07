@@ -8,20 +8,51 @@
   padding: 0;
 }
 
+.filter__type {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.filter__color-type {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $smoke-white;
+  }
+}
+
+.filter__personal {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .filter__title {
+  font-size: 17px;
   line-height: 16px;
   color: $turquoise;
   text-transform: uppercase;
-  padding: 0;
+  margin: 0;
+
+  &--bgcolor {
+    @media (min-width: $tablet-width) {
+      background-color: $smoke-white;
+    }
+  }
 }
 
 .filter__list {
   @include list-reset;
 
-  &--no-tel {
-    @media (min-width: $tablet-width) {
-      background-color: $smoke-white;
-    }
+  @media (min-width: $tablet-width) {
+    background-color: $smoke-white;
+  }
+
+  &--nobgcolor {
+    background-color: transparent;
   }
 }
 
@@ -30,6 +61,28 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
+  }
+}
+
+.filter__list-color {
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, auto);
+    grid-row: auto auto;
+  }
+}
+
+.filter__item-color:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $desktop-width) {
+
   }
 }
 
@@ -46,6 +99,10 @@
     font-size: 19px;
     background-color: $smoke-white;
   }
+
+  &--nobgcolor {
+    background-color: transparent;
+  }
 }
 
 .filter__input-area {
@@ -54,6 +111,7 @@
   border: 2px solid $gray;
   padding: 17px 17px;
   resize: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     width: 501px;
@@ -74,5 +132,26 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
+    order: 1;
   }
+}
+
+.filter__wrapper-button {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter__button {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
+.filter__inner-form {
+  display: flex;
+  flex-wrap: wrap;
 }
