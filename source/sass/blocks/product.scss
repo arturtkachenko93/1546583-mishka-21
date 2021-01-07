@@ -1,5 +1,24 @@
 .product__item {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.product__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-right: 0;
+    width: 316px;
+  }
 }
 
 .product__list:hover {
@@ -13,10 +32,34 @@
 .product__list-wrapper {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid $whisper;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.product__product-title {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 75%;
+  }
 }
 
 .product__product-link {
+  width: 50%;
+}
+
+.product__product-link-title {
   font-size: 17px;
   line-height: 24px;
   color: $black;
@@ -31,8 +74,10 @@
   line-height: 30px;
   color: $gray;
   font-weight: 400;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+    display: block;
     font-size: 15px;
   }
 }

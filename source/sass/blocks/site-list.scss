@@ -45,3 +45,9 @@
     padding: 0;
   }
 }
+
+.site-list__active {
+  color: $black;
+  cursor: default;
+  pointer-events: none;
+}
