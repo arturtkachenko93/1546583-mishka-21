@@ -1,18 +1,28 @@
+.header-nav {
+  padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .header-nav__logo {
   display: block;
   margin: 0 auto;
   width: 86px;
   height: auto;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    left: 50px;
+    margin: 0;
+    padding: 22px 0 20px 48px;
+    padding-left: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    padding: 0;
+    padding-top: 9px;
   }
 }
 
@@ -28,12 +38,14 @@
     font-weight: 400;
     color: $gray;
     margin: 0;
+    padding-top: 20px;
+    padding-right: 50px;
     text-align: end;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    padding-right: 50px;
   }
 }
 
@@ -56,50 +68,57 @@
 .header-nav__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 370px auto 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 370px 82px 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 540px auto 1fr;
+    grid-template-columns: 550px 149px 82px auto;
   }
 }
 
 .header-nav__search {
   border-bottom: solid 1px rgba($black, 0.1);
+  padding: 29px 55px 27px 32px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    padding: 0;
+    padding-left: 33px;
+    padding-top: 36px;
     border-left: 1px solid rgba($black, 0.1);
     border-right: 1px solid rgba($black, 0.1);
     border-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
+    padding: 36px 32px 0 32px;
   }
 }
 
 .header-nav__basket {
   border-bottom: solid 1px rgba($black, 0.1);
+  padding: 29px 30px 27px 30px;
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+    padding-left: 31px;
+    padding-right: 48px;
     text-align: end;
     border-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 5 / 6;
+    grid-column: 4 / 5;
+    padding: 32px 50px 28px 30px;
   }
 }
 
 .header-nav__list {
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
     display: flex;
     border-top: 1px solid rgba($black, 0.1);
   }
@@ -113,7 +132,7 @@
 
 .header-nav__list-2 {
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     grid-row: 2 / 3;
     display: flex;
     border-top: 1px solid rgba($black, 0.1);

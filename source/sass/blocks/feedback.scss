@@ -5,12 +5,25 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 17px;
     line-height: 30px;
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 79px;
   }
 }
 
 .feedback__author-name {
+  display: inline-block;
+  margin-top: 33px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }

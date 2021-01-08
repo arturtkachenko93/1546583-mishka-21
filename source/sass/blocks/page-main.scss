@@ -1,4 +1,10 @@
+// .page-main__product {
+//   margin-top: ;
+// }
+
 .page-main__about-us {
+  margin-top: 73px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -7,5 +13,14 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    padding: 0 225px;
+  }
+}
+
+.page-main__review {
+  margin-top: 58px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 225px;
   }
 }

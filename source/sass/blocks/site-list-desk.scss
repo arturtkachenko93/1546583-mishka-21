@@ -8,11 +8,13 @@
 .site-list-desk__item:nth-child(1) {
   @media (min-width: $desktop-width) {
     font-size: 15px;
+    padding: 20px 59px 20px 50px;
   }
 }
 
 .site-list-desk__item:nth-child(2) {
   @media (min-width: $desktop-width) {
     font-size: 15px;
+    padding: 20px 59px 20px 0;
   }
 }

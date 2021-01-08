@@ -19,17 +19,47 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 334px 334px;
   }
 }
 
 .about-us__item {
   line-height: 20px;
+  margin-top: 83px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    width: 50%;
+  }
+}
+
+.about-us__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.about-us__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.about-us__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.about-us__item:nth-child(5) {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.about-us__item:nth-child(6) {
+  @media (min-width: $tablet-width) {
+    order: 6;
   }
 }

@@ -1,4 +1,6 @@
 .contacts {
+  margin-top: 89px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -55,6 +57,7 @@
   font-weight: 400;
   font-style: normal;
   color: $gray;
+  margin-top: 28px;
 
   &--adress {
     @media (min-width: $tablet-width) {
@@ -70,6 +73,7 @@
 .contacts__map {
   display: block;
   margin: 0 auto;
+  margin-top: 62px;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
@@ -78,8 +82,18 @@
 }
 
 .contacts__button {
+  display: block;
+  line-height: 16px;
+  margin: 0 auto;
+  margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    margin-top: 42px;
   }
 }
