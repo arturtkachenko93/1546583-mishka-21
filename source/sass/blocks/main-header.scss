@@ -1,15 +1,24 @@
 .main-header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 155px;
+    border-top: solid 1px rgba($black, 0.1);
+    margin-top: -60px;
+  }
 }
 
 .main-header__title {
+  width: 260px;
+  margin: auto;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  margin-top: 73px;
 
   @media (min-width: $tablet-width) {
+    width: 668px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -30,6 +39,7 @@
     flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
+    margin-top: 372px;
   }
 }
 
@@ -45,6 +55,10 @@
   font-size: 19px;
   color: $white;
   padding: 24px 160px 31px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 310px;
+  }
 
   &--interior {
     background-color: $turquoise;

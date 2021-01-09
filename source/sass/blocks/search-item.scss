@@ -1,6 +1,11 @@
 .search-item__link {
   color: $black;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 36px 31px 33px;
+  }
+
   &--hidden {
     @media (min-width: $tablet-width) {
       font-size: 0;

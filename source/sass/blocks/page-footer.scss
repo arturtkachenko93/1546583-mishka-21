@@ -28,19 +28,27 @@
 
 .page-footer__social-list {
   @include list-reset;
-
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   border-bottom: 1px solid rgba($black, 0.1);
-  padding: 25px 59px 22px 59px;
+  padding: 25px 0;
 
   @media (min-width: $tablet-width) {
     width: 30%;
     border-bottom: 0;
     padding: 0;
   }
+}
+
+.page-footer__social-item {
+  margin-right: 41px;
+  // padding: 25px 0 22px 59px;
+}
+
+.page-footer__social-item:last-child {
+  margin-right: 0;
 }
 
 .page-footer__wrapper-desc {

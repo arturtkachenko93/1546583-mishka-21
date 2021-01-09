@@ -103,6 +103,7 @@
 
 .product-main__parameter {
   width: 98px;
+  padding-right: 10px;
 }
 
 .product-main__img {
@@ -122,6 +123,7 @@
 
 .product-main__price {
   color: $gray;
+  margin: auto;
   margin-top: 26px;
 
   @media (min-width: $tablet-width) {
@@ -137,6 +139,7 @@
 
 .product-main__button {
   line-height: 16px;
+  margin: auto;
   margin-top: 25px;
   padding-bottom: 16px;
 

@@ -1,6 +1,11 @@
 .basket-item__link {
   color: $black;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 35px 0 40px 29px;
+  }
+
   &:hover {
     color: rgba($black, 0.6);
   }

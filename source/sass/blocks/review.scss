@@ -65,11 +65,12 @@
 .review__button {
   width: 50%;
   height: 50px;
-  background: 0 0;
+  background-color: transparent;
   background-image: url(../img/icons/huge-arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50px 26px;
+  cursor: pointer;
   border: 0;
   padding: 0;
 
