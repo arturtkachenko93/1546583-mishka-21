@@ -6,7 +6,12 @@
   @media (min-width: $tablet-width) {
     padding-top: 155px;
     border-top: solid 1px rgba($black, 0.1);
-    margin-top: -60px;
+    margin-top: -45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    margin-top: -56px;
   }
 }
 
@@ -22,11 +27,14 @@
     width: 668px;
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 372px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1000px;
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 355px;
   }
 }
 
@@ -37,9 +45,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 668px;
     padding-left: 50px;
     padding-right: 50px;
-    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
     margin: 0 auto;
   }
 }
@@ -47,6 +61,14 @@
 .main-header__item {
   @media (min-width: $tablet-width) {
     width: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+
+  &:hover {
+    background-color: $light-turquoise;
   }
 }
 
@@ -68,9 +90,23 @@
   padding: 24px 261px 31px 30px;
 
   @media (min-width: $tablet-width) {
+    width: 334px;
     font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 350px;
+    width: 525px;
+  }
+
+  &--interior:hover {
+    background-color: $light-turquoise;
+    margin-top: -5px;
+  }
+
+  &--toys:hover {
+    background-color: $darker-turquoise;
+    margin-top: -5px;
   }
 }

@@ -8,10 +8,17 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    min-width: auto;
     text-align: end;
     padding: 32px 50px 29px 29px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 50px 28px 30px;
+    margin: 0;
+  }
+
 
   &:hover {
     color: rgba($black, 0.6);

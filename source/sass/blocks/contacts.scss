@@ -10,7 +10,6 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 38px;
   margin-bottom: 62px;
 
   @media (min-width: $tablet-width) {

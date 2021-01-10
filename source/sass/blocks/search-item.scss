@@ -7,9 +7,13 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    width: auto;
     padding: 36px 31px 0 33px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 32px 0 32px;
   }
 
   &--hidden {

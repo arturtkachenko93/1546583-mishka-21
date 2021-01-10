@@ -12,7 +12,9 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding: 0 225px;
+    padding-top: 68px;
+    padding-bottom: 90px;
+    padding-left: 225px;
   }
 }
 
@@ -51,6 +53,10 @@
     font-size: 20px;
     line-height: 22px;
     padding-top: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 95px;
   }
 }
 
