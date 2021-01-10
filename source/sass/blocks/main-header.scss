@@ -12,7 +12,7 @@
 
 .main-header__title {
   width: 260px;
-  margin: auto;
+  margin: 0 auto;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
@@ -39,33 +39,33 @@
     flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
+    width: 668px;
+    margin: 0 auto;
   }
 }
 
 .main-header__item {
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: 334px;
   }
+}
+
+.main-header__item:nth-child(1) {
+  background-color: $turquoise;
+}
+
+.main-header__item:nth-child(2) {
+  background-color: $dark-turquoise;
 }
 
 .main-header__item-link {
   display: block;
   box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   font-size: 19px;
   color: $white;
-  padding: 24px 160px 31px 30px;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 310px;
-  }
-
-  &--interior {
-    background-color: $turquoise;
-  }
-
-  &--toys {
-    background-color: $dark-turquoise;
-  }
+  padding: 24px 261px 31px 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

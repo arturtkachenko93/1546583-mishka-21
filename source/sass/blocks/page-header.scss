@@ -1,20 +1,14 @@
-.page-header {
-  @media (min-width: $tablet-width) {
-    width: 668px;
-    margin: auto;
-  }
-}
-
 .page-header__wrapper {
   position: relative;
   max-width: 320px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .page-header__toogle {
   position: absolute;
   background-image: url("../img/icons/menu-close.svg");
   background-color: transparent;
+  background-repeat: no-repeat;
   top: 30px;
   right: 30px;
   width: 21px;

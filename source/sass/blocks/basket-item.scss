@@ -1,10 +1,16 @@
 .basket-item__link {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
   color: $black;
-  margin-left: -28px;
+  padding: 29px 30px 27px 30px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding: 35px 0 40px 29px;
+    text-align: end;
+    padding: 32px 50px 29px 29px;
+    margin: 0;
   }
 
   &:hover {

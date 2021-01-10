@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 292px 277px 1fr;
+    grid-template-columns: 292px 277px 99px;
     grid-template-rows: auto auto auto auto 52px;
     padding-top: 40px;
   }
@@ -23,7 +23,7 @@
   line-height: 30px;
   margin: 0;
   margin-bottom: 4px;
-  width: 100%;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
@@ -122,6 +122,8 @@
     grid-column: 2 / 4;
     grid-row: 2 / -1;
     margin: 0;
+    margin-left: 42px;
+    width: 334px;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,7 +134,7 @@
 
 .product-main__price {
   color: $gray;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
@@ -149,7 +151,7 @@
 
 .product-main__button {
   line-height: 16px;
-  margin: auto;
+  margin: 0 auto;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {
