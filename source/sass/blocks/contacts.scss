@@ -1,6 +1,4 @@
 .contacts {
-  margin-top: 89px;
-
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -12,6 +10,8 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 38px;
+  margin-bottom: 62px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, auto);
@@ -72,7 +72,7 @@
 }
 
 .contacts__map {
-  margin-top: 62px;
+  margin-bottom: 42px;
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
@@ -84,7 +84,7 @@
   display: block;
   line-height: 16px;
   margin: 0 auto;
-  margin-top: 42px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     margin-top: 55px;

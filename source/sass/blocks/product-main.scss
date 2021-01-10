@@ -1,6 +1,8 @@
 .product-main__wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 31px;
+  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -20,6 +22,7 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 4px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -27,6 +30,7 @@
     grid-row: 1 / 2;
     font-size: 43px;
     line-height: 50px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,10 +47,12 @@
   text-transform: uppercase;
   color: $turquoise;
   margin: 0;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     line-height: 17px;
     text-align: center;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,12 +64,13 @@
   font-size: 15px;
   font-weight: 400;
   margin: 0;
-  margin-top: 17px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     line-height: 30px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,13 +79,14 @@
 }
 
 .product-main__list {
-  margin: 0;
-  margin-top: 28px;
   width: 100%;
+  margin: 0;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,11 +116,12 @@
 
 .product-main__img {
   background-size: contain;
-  margin-top: 28px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 4;
     grid-row: 2 / -1;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -124,12 +133,13 @@
 .product-main__price {
   color: $gray;
   margin: auto;
-  margin-top: 26px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     font-size: 20px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +150,6 @@
 .product-main__button {
   line-height: 16px;
   margin: auto;
-  margin-top: 25px;
   padding-bottom: 16px;
 
   @media (min-width: $tablet-width) {

@@ -16,6 +16,7 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+  margin-bottom: 120px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -31,7 +32,6 @@
 
 .main-header__list {
   @include list-reset;
-  margin-top: 120px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +39,6 @@
     flex-wrap: wrap;
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 372px;
   }
 }
 

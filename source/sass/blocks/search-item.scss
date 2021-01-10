@@ -1,5 +1,6 @@
 .search-item__link {
   color: $black;
+  margin-left: -52px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -19,4 +20,8 @@
   &:active {
     color: rgba($black, 0.3);
   }
+}
+
+.search-item__icon {
+  margin-right: 20px;
 }

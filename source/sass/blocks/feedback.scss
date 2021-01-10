@@ -3,6 +3,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -17,7 +18,6 @@
 
 .feedback__author-name {
   display: inline-block;
-  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
     width: 100%;

@@ -1,5 +1,6 @@
 .basket-item__link {
   color: $black;
+  margin-left: -28px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -16,5 +17,5 @@
 }
 
 .basket-item__icon {
-  margin-right: 30px;
+  margin-right: 20px;
 }
