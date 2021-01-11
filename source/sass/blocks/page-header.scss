@@ -1,3 +1,21 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-image: linear-gradient($white 90px, $light-gray 33%);
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      background-color: rgba($black, 0.1);
+      width: 100%;
+      top: 90px;
+      left: 0;
+    }
+  }
+}
+
 .page-header__wrapper {
   position: relative;
   max-width: 320px;
