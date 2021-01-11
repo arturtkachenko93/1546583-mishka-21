@@ -29,9 +29,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 175px;
-    grid-template-rows: 52px 220px;
+    padding: 78px 50px 96px 225px;
+    justify-content: space-between;
   }
 }
 
@@ -53,6 +52,8 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    width: 680px;
+    padding: 0;
   }
 }
 
@@ -67,10 +68,11 @@
     height: 50px;
     border: 0;
     margin: 0;
-    // top: 100px;
     bottom: 150px;
     right: 50px;
   }
+
+  @media (min-width: $desktop-width) {}
 }
 
 .review__button {
