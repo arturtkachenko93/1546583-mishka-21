@@ -1,5 +1,17 @@
 .video-production {
   margin-bottom: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+  }
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba($black, 0.1);
+
+    &:active {
+      box-shadow: 0 3px 5px rgba($black, 0.1);
+    }
+  }
 }
 
 .video-production__wrapper {
@@ -9,6 +21,11 @@
   padding-top: 22px;
   padding-bottom: 33px;
   border: 1px solid $whisper;
+
+   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -26,8 +43,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    width: 100%;
+    width: 271px;
     order: 1;
+    padding: 41px 290px 0 107px;
+    margin-bottom: 25px;
   }
 }
 
@@ -40,9 +59,12 @@
   padding: 35px 0 41px 34px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
     font-size: 15px;
     line-height: 30px;
     order: 2;
+    padding: 0 35px 0 40px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,6 +74,9 @@
 }
 
 .video-production__image {
+  @media (min-width: $tablet-width) {
+    height: 455px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -66,15 +91,33 @@
   left: 80px;
   background-color: transparent;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 189px;
+    left: 283px;
+  }
+}
+
+.video-production__image-play {
+    &:hover {
+      width: 121px;
+      height: 97px;
+
+    &:active {
+      width: 81px;
+      height: 57px;
+      opacity: 0.3;
+    }
+  }
 }
 
 .video-production__button {
   width: 192px;
-  height: 52px;
   line-height: 16px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 584px;
     order: 3;
   }
 

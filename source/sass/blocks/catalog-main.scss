@@ -12,12 +12,13 @@
 }
 
 .catalog-main__title {
+  width: 237px;
   font-size: 27px;
   line-height: 30px;
   margin: 0 auto;
-  width: 237px;
 
   @media (min-width: $tablet-width) {
+    width: 400px;
     font-size: 43px;
     line-height: 50px;
   }
