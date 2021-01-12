@@ -1,6 +1,14 @@
+.video-production {
+  margin-bottom: 58px;
+}
+
 .video-production__wrapper {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  padding-top: 22px;
+  padding-bottom: 33px;
+  border: 1px solid $whisper;
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -10,7 +18,11 @@
 }
 
 .video-production__title {
+  width: 169px;
+  padding-left: 91px;
   margin: 0;
+  margin-bottom: 26px;
+  font-size: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -20,10 +32,12 @@
 }
 
 .video-production__desc {
+  width: 226px;
   font-size: 13px;
   color: $gray;
   font-weight: 400;
   margin: 0;
+  padding: 35px 0 41px 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
@@ -38,7 +52,6 @@
 }
 
 .video-production__image {
-  position: relative;
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
@@ -49,10 +62,18 @@
 .video-production__play-button {
   position: absolute;
   border: none;
+  top: 135px;
+  left: 80px;
   background-color: transparent;
+  padding: 0;
 }
 
 .video-production__button {
+  width: 192px;
+  height: 52px;
+  line-height: 16px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     order: 3;
   }

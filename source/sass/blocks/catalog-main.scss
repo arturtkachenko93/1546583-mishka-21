@@ -1,5 +1,5 @@
 .catalog-main__wrapper {
-  padding: 74px 41px;
+  padding: 74px 0;
   background-color: $smoke-white;
 
   @media (min-width: $tablet-width) {
@@ -14,8 +14,8 @@
 .catalog-main__title {
   font-size: 27px;
   line-height: 30px;
-  margin: 0;
-  text-align: center;
+  margin: 0 auto;
+  width: 237px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;

@@ -25,28 +25,8 @@
     background: linear-gradient(0deg, $gray, $gray);
   }
 
-  &--no-tel {
-    @media (min-width: $tablet-width) {
-      width: 175px;
-    }
-  }
-
   &--notel-contact {
     @media (min-width: $tablet-width) {
-      width: 230px;
-    }
-  }
-
-  &--catalog {
-    @media (min-width: $mobile-width) {
-      width: 192px;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 582px;
-    }
-
-    @media (min-width: $desktop-width) {
       width: 230px;
     }
   }

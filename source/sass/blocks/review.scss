@@ -29,8 +29,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 78px 50px 96px 225px;
+    max-width: 875px;
+    padding-top: 78px;
+    padding-bottom: 96px;
+    padding-left: 174px;
     justify-content: space-between;
+    margin: 0 auto;
   }
 }
 
@@ -69,7 +73,7 @@
     border: 0;
     margin: 0;
     bottom: 150px;
-    right: 50px;
+    right: 0;
   }
 
   @media (min-width: $desktop-width) {}
@@ -104,10 +108,12 @@
   display: block;
   line-height: 16px;
   margin: 0 auto;
+  height: 52px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     order: 2;
+    width: 175px;
   }
 
   @media (min-width: $desktop-width) {

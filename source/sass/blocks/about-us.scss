@@ -8,10 +8,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 700px;
     font-size: 53px;
     line-height: 57px;
     padding-top: 68px;
-    padding-left: 225px;
+    margin: 0 auto;
   }
 }
 

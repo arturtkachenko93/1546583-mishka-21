@@ -9,8 +9,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 158px;
-    margin-top: -150px;
-    border-top: solid 1px rgba($black, 0.1);
     margin-bottom: 115px;
   }
 }
@@ -31,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1000px;
+    width: 100%;
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 355px;
@@ -87,7 +85,7 @@
   margin: 0 auto;
   font-size: 19px;
   color: $white;
-  padding: 24px 261px 31px 30px;
+  padding: 24px 180px 31px 30px;
 
   @media (min-width: $tablet-width) {
     width: 334px;
