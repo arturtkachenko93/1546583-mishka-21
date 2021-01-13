@@ -3,13 +3,29 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    font-size: 17px;
     line-height: 30px;
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 806px;
+    padding-right: 75px;
+    margin-bottom: 44px;
   }
 }
 
 .feedback__author-name {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
   }
@@ -18,4 +34,18 @@
 .feedback__author-contact {
   line-height: 30px;
   font-weight: 400;
+}
+
+.feedback__slide {
+  display: none;
+
+  &--show {
+    display: block;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

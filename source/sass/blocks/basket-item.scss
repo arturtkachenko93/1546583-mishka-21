@@ -1,5 +1,24 @@
 .basket-item__link {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
   color: $black;
+  padding: 29px 30px 27px 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: auto;
+    text-align: end;
+    padding: 32px 50px 29px 29px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 50px 33px 30px;
+    margin: 0;
+  }
+
 
   &:hover {
     color: rgba($black, 0.6);
@@ -8,4 +27,8 @@
   &:active {
     color: rgba($black, 0.3);
   }
+}
+
+.basket-item__icon {
+  margin-right: 20px;
 }

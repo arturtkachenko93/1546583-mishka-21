@@ -1,15 +1,122 @@
+.review__feedback {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    order: 3;
+  }
+}
+
+.review__feedback br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.review__wrapper {
+  padding-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding-top: 83px;
+    padding-bottom: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 875px;
+    padding-top: 78px;
+    padding-bottom: 96px;
+    padding-left: 174px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
 .review__title {
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    width: 473px;
+    padding-right: 20px;
+    margin: 0;
+    order: 1;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    width: 680px;
+    padding: 0;
+  }
+}
+
+.review__button-wrapper {
+  display: flex;
+  border: 1px solid $whisper;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 180px;
+    height: 50px;
+    border: 0;
+    margin: 0;
+    bottom: 150px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {}
+}
+
+.review__button {
+  width: 50%;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("../img/icons/huge-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 26px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+
+  &--prev {
+    border-right: 1px solid $whisper;
+
+    @media (min-width: $tablet-width) {
+      border-right: 0;
+    }
+  }
+
+  &--next {
+    transform: scaleX(-1);
+  }
+}
+
+.review__button-write {
+  display: block;
+  line-height: 16px;
+  margin: 0 auto;
+  height: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    order: 2;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }

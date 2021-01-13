@@ -1,48 +1,110 @@
-.main-header__title {
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  margin: 0;
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 73px;
 
   @media (min-width: $tablet-width) {
-    font-size: 43px;
-    line-height: 50px;
+    padding-top: 155px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 158px;
+    margin-bottom: 115px;
+  }
+}
+
+.main-header__title {
+  width: 260px;
+  margin: 0 auto;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 372px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 355px;
   }
 }
 
 .main-header__list {
   @include list-reset;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+.main-header__item {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+  }
+
+  &:hover {
+    background-color: $light-turquoise;
+  }
+}
+
+.main-header__item:nth-child(1) {
+  background-color: $turquoise;
+}
+
+.main-header__item:nth-child(2) {
+  background-color: $dark-turquoise;
 }
 
 .main-header__item-link {
   display: block;
   box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   font-size: 19px;
   color: $white;
-  width: 320px;
-  padding: 24px 160px 31px 30px;
-
-  &--interior {
-    background-color: $turquoise;
-  }
-
-  &--toys {
-    background-color: $dark-turquoise;
-  }
+  padding: 24px 180px 31px 30px;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
     width: 334px;
-    padding: 25px 167px 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 350px;
     width: 525px;
-    padding: 25px 350px 34px 37px;
+  }
+
+  &--interior:hover {
+    background-color: $light-turquoise;
+    margin-top: -5px;
+  }
+
+  &--toys:hover {
+    background-color: $darker-turquoise;
+    margin-top: -5px;
   }
 }

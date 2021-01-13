@@ -1,0 +1,60 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    background-image: linear-gradient($white 91px, $smoke-white 33%);
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      background-color: rgba($black, 0.1);
+      width: 100%;
+      top: 90px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__toogle {
+  position: absolute;
+  background-image: url("../img/icons/menu-close.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  top: 30px;
+  right: 30px;
+  width: 21px;
+  height: 20px;
+  border: 0;
+  cursor: pointer;
+
+  &--opened {
+    position: absolute;
+    background-image: url("../img/icons/menu.svg");
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    width: 20px;
+    height: 14px;
+    border: 0;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

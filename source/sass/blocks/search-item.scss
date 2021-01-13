@@ -1,5 +1,26 @@
 .search-item__link {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
   color: $black;
+  padding: 29px 55px 27px 32px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 36px 31px 0 33px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 32px 0 32px;
+  }
+
+  &--hidden {
+    @media (min-width: $tablet-width) {
+      font-size: 0;
+    }
+  }
 
   &:hover {
     color: rgba($black, 0.6);
@@ -8,4 +29,8 @@
   &:active {
     color: rgba($black, 0.3);
   }
+}
+
+.search-item__icon {
+  margin-right: 20px;
 }
