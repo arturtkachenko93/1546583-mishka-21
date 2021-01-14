@@ -12,12 +12,6 @@
     grid-template-columns: 450px 149px 184px 267px;
     grid-template-rows: min-content 114px;
   }
-
-  &--noindex {
-    @media (min-width: $desktop-width) {
-      grid-template-rows: min-content 90px;
-    }
-  }
 }
 
 .header-nav--closed .header-nav__list,

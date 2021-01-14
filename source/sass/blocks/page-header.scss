@@ -18,12 +18,6 @@
   @media (min-width: $desktop-width) {
     background-image: none;
   }
-
-  &--noindex {
-    @media (min-width: $desktop-width) {
-      background-image: linear-gradient($white 91px, $smoke-white 33%);
-    }
-  }
 }
 
 .page-header__wrapper {
