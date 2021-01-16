@@ -23,7 +23,7 @@
 .video-production__wrapper {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
+
   padding-top: 22px;
   padding-bottom: 33px;
   border: 1px solid $whisper;
@@ -39,6 +39,7 @@
     grid-column-gap: 79px;
     grid-template-rows: repeat(3, min-content);
     padding-bottom: 0;
+    align-self: start;
   }
 }
 
@@ -93,11 +94,11 @@
   }
 }
 
-.video-production__image {
-  display: block;
+.video-production__image-wrapper {
+  position: relative;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    height: 455px;
     margin-bottom: 41px;
   }
 
@@ -108,23 +109,28 @@
   }
 }
 
-.video-production__play-button {
-  position: absolute;
-  border: none;
-  top: 135px;
-  left: 80px;
-  background-color: transparent;
-  padding: 0;
-
+.video-production__image {
+  display: block;
 
   @media (min-width: $tablet-width) {
-    top: 189px;
-    left: 283px;
+    width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
   }
 }
 
-.video-production__image-play {
+.video-production__play-button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 0;
   transition: .3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
     &:hover {
       width: 121px;
@@ -152,5 +158,6 @@
     width: 230px;
     height: 52px;
     margin: 0;
+    margin-bottom: 30px;
   }
 }

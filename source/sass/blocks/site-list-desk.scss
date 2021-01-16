@@ -24,6 +24,10 @@
     margin-right: 61px;
     margin-bottom: 10px;
     position: relative;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -41,9 +45,3 @@
     color: rgba($black, 0.3);
   }
 }
-
-// .site-list-desk__item:nth-child(odd) .site-list-desk__link {
-//   @media (min-width: $desktop-width) {
-//     padding-left: 0;
-//   }
-// }

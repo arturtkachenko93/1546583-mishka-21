@@ -153,17 +153,22 @@
 .product__price-wrapper {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 1px;
-    background-color: $whisper;
-    width: 100%;
-    left: 0;
-    top: -20px;
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      background-color: $whisper;
+      width: 100%;
+      left: 0;
+      top: -20px;
+      margin-top: auto;
+    }
   }
 }
 
@@ -176,6 +181,10 @@
     width: 190px;
     font-size: 17px;
     margin-right: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
 }
 
