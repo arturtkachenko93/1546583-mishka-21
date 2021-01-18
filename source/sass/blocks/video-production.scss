@@ -39,7 +39,6 @@
     grid-column-gap: 79px;
     grid-template-rows: repeat(3, min-content);
     padding-bottom: 0;
-    align-self: start;
   }
 }
 
@@ -62,8 +61,9 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     width: 149px;
-    padding: 96px 138px 0 0;
-    margin: 0;
+    align-self: self-start;
+    padding: 86px 138px 0 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -90,7 +90,7 @@
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     padding-left: 0;
-    margin-bottom: 21px;
+    margin-bottom: 51px;
   }
 }
 
@@ -127,19 +127,20 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  transition: .3s;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
-    &:hover {
+    & svg:hover {
       width: 121px;
       height: 97px;
+      transition: .3s;
 
     &:active {
       width: 81px;
       height: 57px;
       opacity: 0.3;
+      transition: .3s;
     }
   }
 }

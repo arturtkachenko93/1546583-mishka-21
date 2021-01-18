@@ -39,7 +39,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 57px;
+      margin-bottom: 54px;
     }
   }
 
@@ -78,7 +78,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 52px 26px 27px;
+    width: 462px;
+    position: relative;
+    padding: 27px 30px 26px 28px;
   }
 }
 
@@ -157,6 +159,7 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     position: relative;
+    margin-top: auto;
 
     &::before {
       content: '';
@@ -166,8 +169,7 @@
       background-color: $whisper;
       width: 100%;
       left: 0;
-      top: -20px;
-      margin-top: auto;
+      top: -25px;
     }
   }
 }
