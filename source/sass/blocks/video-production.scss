@@ -131,7 +131,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-    & svg:hover {
+    &:hover svg {
       width: 121px;
       height: 97px;
       transition: .3s;
