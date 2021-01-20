@@ -1,9 +1,62 @@
+.review {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background-image: url("../../img/zigzag-line-mobile.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 350px;
+      height: 457px;
+      background-image: url("../../img/review.jpg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/review@2x.jpg");
+      }
+    }
+
+    &::after {
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
 .review__feedback {
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -29,18 +82,37 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     max-width: 875px;
     padding-top: 78px;
-    padding-bottom: 96px;
+    padding-bottom: 66px;
     padding-left: 174px;
     justify-content: space-between;
     margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 350px;
+      height: 457px;
+      background-image: url("../../img/review.jpg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      left: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/review@2x.jpg");
+      }
+    }
   }
 }
 
 .review__title {
   font-size: 25px;
-  line-height: 30px;
+  line-height: 34px;
   margin: 0;
   margin-bottom: 14px;
 
@@ -58,13 +130,14 @@
     line-height: 57px;
     width: 680px;
     padding: 0;
+    z-index: 1;
   }
 }
 
 .review__button-wrapper {
   display: flex;
   border: 1px solid $whisper;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -76,7 +149,9 @@
     right: 0;
   }
 
-  @media (min-width: $desktop-width) {}
+  @media (min-width: $desktop-width) {
+    bottom: 83px;
+  }
 }
 
 .review__button {

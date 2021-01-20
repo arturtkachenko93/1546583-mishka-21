@@ -2,23 +2,53 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    position: relative;
+    padding-top: 71px;
     padding-bottom: 105px;
     width: 1050px;
     margin: 0 auto;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 1052px;
+      height: 23px;
+      background-image: url("../../img/zigzag-line-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
 .contacts__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 38px;
-  padding-bottom: 62px;
+  grid-template-columns: max-content 1fr;
+  padding-top: 44px;
+  padding-bottom: 64px;
+
 
   @media (min-width: $tablet-width) {
+    position: relative;
     grid-template-columns: 78px 256px 78px 256px;
     padding-top: 68px;
     padding-bottom: 49px;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icons/flag.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 45px;
+      right: -5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +58,20 @@
     margin: 0;
     padding-left: 175px;
     width: auto;
+
+    &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icons/flag.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 45px;
+      left: 75px;;
+    }
   }
 }
 
@@ -63,6 +107,33 @@
   font-style: normal;
   color: $gray;
 
+
+  &--desk {
+    margin-right: 33px;
+    margin-bottom: 30px;
+  }
+
+  &--email {
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 179px;
+      height: 1px;
+      display: block;
+      position: absolute;
+      background-color: $light-green;
+      top: 26px;
+      left: 0;
+    }
+  }
+
+  &--adress {
+    @media (min-width: $tablet-width) {
+      width: 190px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 190px;
     padding-bottom: 30px;
@@ -70,7 +141,7 @@
 }
 
 .contacts__map {
-  margin-bottom: 42px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;

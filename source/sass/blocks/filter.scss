@@ -261,6 +261,8 @@
   }
 
   &--contacts {
+    margin-bottom: 15px;
+
     @media (min-width: $tablet-width) {
       padding-top: 19px;
       margin-right: 45px;
@@ -292,12 +294,14 @@
 
   &--color {
     @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 24px;
       width: 501px;
-      display: flex;
-      flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(3, 1fr);
       width: 875px;
     }
   }
@@ -402,27 +406,13 @@
 
     @media (min-width: $tablet-width) {
       width: 122px;
-      margin-right: 80px;
-      margin-bottom: 24px;
       padding-left: 74px;
-
-      &:nth-child(n+4):nth-child(-n+180):nth-child(odd) {
-        margin-bottom: 0;
-      }
-
-      &:nth-child(even) {
-        margin-right: 0;
-      }
+      margin: 0;
     }
 
     @media (min-width: $desktop-width) {
       width: 170px;
       padding-left: 96px;
-      margin-right: 0;
-
-      &:nth-child(n+3):nth-child(-n+180) {
-        margin-bottom: 0;
-      }
     }
   }
 }
@@ -455,15 +445,13 @@
 }
 
 .filter__input-name {
+  position: relative;
   border-bottom: 2px solid $gray;
   padding-bottom: 17px;
 
   &--contacts {
-    margin-top: 18px;
-
     @media (min-width: $tablet-width) {
       width: 484px;
-      margin: 0;
       padding: 14px 0 20px 17px;
     }
 
@@ -491,6 +479,19 @@
     @media (min-width: $desktop-width) {
       width: 591px;
     }
+  }
+}
+
+.filter__input-image {
+  position: absolute;
+  bottom: 15px;
+
+  &--phone {
+    left: 230px;
+  }
+
+  &--mail {
+    left: 225px;
   }
 }
 

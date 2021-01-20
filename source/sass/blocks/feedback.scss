@@ -3,7 +3,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -16,6 +16,11 @@
     width: 806px;
     padding-right: 75px;
     margin-bottom: 44px;
+    z-index: 1;
+
+    & br {
+      display: none;
+    }
   }
 }
 
@@ -28,12 +33,17 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+    z-index: 1;
   }
 }
 
 .feedback__author-contact {
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
 }
 
 .feedback__slide {

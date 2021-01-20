@@ -1,14 +1,32 @@
-.catalog-main__wrapper {
+.catalog-main__wrapper-title {
   padding: 74px 0;
   background-color: $smoke-white;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     padding: 57px 100px 63px 100px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../../img/zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+      bottom: 0;
+      left: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 113px 300px 77px 300px;
     margin-top: -113px;
+
+    &::after {
+      height: 34px;
+    }
   }
 }
 

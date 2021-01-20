@@ -11,13 +11,13 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header page-header">
+  <header class="page__header page-header page-header--noindex">
     <div class="page-header__wrapper">
       <button class="page-header__toogle" type="button">
         <span class="visually-hidden">Открыть меню сайта</span>
       </button>
     </div>
-    <nav class="header-nav header-nav--nojs">
+    <nav class="header-nav header-nav--noindex header-nav--nojs">
       <a class="header-nav__logo" href="index.html">
         <img class="header-nav__logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип сайта Мишка">
       </a>
@@ -135,10 +135,16 @@
             <li class="filter__item filter__item--contacts">
               <label class="filter__title filter__title--contacts" for="tel">Тел</label>
               <input class="filter__input-name filter__input-name--contacts" type="tel" name="tel" id="tel" pattern="[+7]{2}[0-9]{10}"placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <svg class="filter__input-image filter__input-image--phone" width="25" height="34">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
             </li>
             <li class="filter__item filter__item--contacts filter__item--contacts-email">
               <label class="filter__title filter__title--contacts" for="email">E-mail</label>
               <input class="filter__input-name filter__input-name--contacts" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              <svg class="filter__input-image filter__input-image--mail" width="32" height="21">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
             </li>
           </ul>
         </div>
