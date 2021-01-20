@@ -54,7 +54,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 77px 270px;
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content;
     margin: 0;
     padding-left: 175px;
     width: auto;
@@ -155,7 +155,6 @@
 }
 
 .contacts__button {
-  display: block;
   line-height: 16px;
   margin: 0 auto;
   margin-bottom: 39px;
