@@ -59,9 +59,9 @@
 
   @media (max-width: $mobile-width) {
     &::after {
-      content: '';
       display: block;
       position: absolute;
+      content: '';
       width: 75%;
       height: 1px;
       top: 7px;
@@ -99,9 +99,9 @@
 
   @media (max-width: $mobile-width) {
     &::after {
-      content: '';
       display: block;
       position: absolute;
+      content: '';
       width: 75%;
       height: 1px;
       top: 7px;
@@ -159,9 +159,9 @@
 
   @media (max-width: $mobile-width) {
     &::after {
-      content: '';
       display: block;
       position: absolute;
+      content: '';
       width: 75%;
       height: 1px;
       top: 7px;
@@ -387,9 +387,9 @@
 
     @media (max-width: $mobile-width) {
       &::after {
-        content: '';
         display: block;
         position: absolute;
+        content: '';
         width: 69%;
         height: 1px;
         top: 7px;
@@ -487,11 +487,33 @@
   bottom: 15px;
 
   &--phone {
+    top: 20px;
     left: 230px;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 630px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: 830px;
+    }
   }
 
   &--mail {
+    top: 25px;
     left: 225px;
+
+    @media (min-width: $tablet-width) {
+      top: 10px;
+      left: 630px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 10px;
+      left: 830px;
+    }
   }
 }
 
@@ -634,7 +656,7 @@
   height: 17px;
   top: 11px;
   left: -52px;
-  background-image: url('../../img/icons/active.svg');
+  background-image: url('../img/icons/active.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 

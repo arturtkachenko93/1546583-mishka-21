@@ -1,20 +1,22 @@
 .about-us {
   @media (min-width: $desktop-width) {
     &::before {
-      position: absolute;
       display: block;
+      position: absolute;
       content: "";
       width: 1050px;
       height: 23px;
-      background-image: url("../../img/zigzag-line-mobile.svg");
+      background-image: url("../img/zigzag-line-mobile.svg");
       background-repeat: no-repeat;
-      background-size: contain;
+      top: 0;
+      left: 0;
     }
   }
 }
 
 .about-us__wrapper {
   padding-top: 39px;
+  margin-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -50,14 +52,10 @@
 
 .about-us__list {
   @include list-reset;
-  padding-top: 82px;
-  padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 334px 334px;
-    padding-top: 97px;
-    padding-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,35 +67,25 @@
   position: relative;
   width: 195px;
   line-height: 20px;
-  margin-bottom: 82px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  padding-top: 82px;
 
   @media (min-width: $tablet-width) {
     width: 293px;
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 110px;
-
-    &:last-child {
-    margin-bottom: 0;
-  }
   }
 }
 
 .about-us__item:nth-child(1) {
-
   &::before {
-    content: '';
     display: block;
     position: absolute;
+    content: '';
     width: 33px;
     height: 38px;
-    background-image: url("../../img/icons/icon-1.svg");
+    background-image: url("../img/icons/icon-1.svg");
     background-repeat: no-repeat;
-    top: -53px;
+    top: 25px;
     left: 5px;
   }
 
@@ -107,67 +95,66 @@
 
 .about-us__item:nth-child(2) {
   width: 200px;
+  padding-top: 83px;
 
   &::before {
-    content: '';
     display: block;
     position: absolute;
+    content: '';
     width: 47px;
     height: 27px;
-    background-image: url("../../img/icons/icon-2.svg");
+    background-image: url("../img/icons/icon-2.svg");
     background-repeat: no-repeat;
-    top: -53px;
+    top: 25px;
     left: 0;
   }
 
   @media (min-width: $tablet-width) {
     order: 3;
     width: 242px;
-    margin-bottom: 111px;
-    padding: 0;
   }
 }
 
 .about-us__item:nth-child(3) {
+  padding-top: 83px;
 
   &::before {
-    content: '';
     display: block;
     position: absolute;
+    content: '';
     width: 34px;
     height: 27px;
-    background-image: url("../../img/icons/icon-3.svg");
+    background-image: url("../img/icons/icon-3.svg");
     background-repeat: no-repeat;
-    top: -53px;
+    top: 27px;
     left: 5px;
   }
 
   @media (min-width: $tablet-width) {
     order: 5;
     width: 217px;
-    padding: 0;
   }
 }
 
 .about-us__item:nth-child(4) {
   width: 225px;
+  padding-top: 83px;
 
   &::before {
-    content: '';
     display: block;
     position: absolute;
+    content: '';
     width: 35px;
     height: 34px;
-    background-image: url("../../img/icons/icon-4.svg");
+    background-image: url("../img/icons/icon-4.svg");
     background-repeat: no-repeat;
-    top: -53px;
+    top: 26px;
     left: 0;
   }
 
   @media (min-width: $tablet-width) {
     order: 2;
     width: 263px;
-    margin: 0;
   }
 }
 
@@ -180,37 +167,36 @@
     position: absolute;
     width: 55px;
     height: 23px;
-    background-image: url("../../img/icons/icon-5.svg");
+    background-image: url("../img/icons/icon-5.svg");
     background-repeat: no-repeat;
-    top: -53px;
+    top: 26px;
     left: -10px;
   }
 
   @media (min-width: $tablet-width) {
     order: 4;
     width: 100%;
-    padding: 0;
   }
 }
 
 .about-us__item:nth-child(6) {
   width: 250px;
+  padding-top: 84px;
 
   &::before {
-    content: '';
     display: block;
     position: absolute;
+    content: '';
     width: 33px;
     height: 32px;
-    background-image: url("../../img/icons/icon-6.svg");
+    background-image: url("../img/icons/icon-6.svg");
     background-repeat: no-repeat;
-    top: -53px;
+    top: 26px;
     left: 0;
   }
 
   @media (min-width: $tablet-width) {
     order: 6;
     width: 293px;
-    padding: 0;
   }
 }

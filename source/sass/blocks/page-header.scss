@@ -1,12 +1,11 @@
 .page-header {
   @media (min-width: $tablet-width) {
     position: relative;
-    background-image: linear-gradient($white 91px, $medium-gray 33%);
 
     &::before {
-      content: '';
       display: block;
       position: absolute;
+      content: '';
       height: 1px;
       background-color: rgba($black, 0.1);
       width: 100%;
@@ -17,10 +16,20 @@
     &--noindex {
       background-image: linear-gradient($white 91px, $smoke-white 33%);
     }
+
+    &--index {
+      background-image: linear-gradient($white 91px, $medium-gray 33%);
+    }
   }
 
   @media (min-width: $desktop-width) {
-    // background-image: none;
+    &--noindex {
+      background-image: none;
+    }
+
+    &--index {
+      background-image: none;
+    }
   }
 }
 

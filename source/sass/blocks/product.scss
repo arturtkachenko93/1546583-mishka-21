@@ -162,9 +162,9 @@
     margin-top: auto;
 
     &::before {
-      content: '';
       display: block;
       position: absolute;
+      content: '';
       height: 1px;
       background-color: $whisper;
       width: 100%;
