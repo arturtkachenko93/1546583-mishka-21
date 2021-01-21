@@ -1,12 +1,14 @@
 .about-us {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     &::before {
-      display: block;
       position: absolute;
+      display: block;
       content: "";
-      width: 1050px;
+      width: 1053px;
       height: 23px;
-      background-image: url("../img/zigzag-line-mobile.svg");
+      background-image: url("../img/zigzag-line-desktop.svg");
       background-repeat: no-repeat;
       top: 0;
       left: 0;

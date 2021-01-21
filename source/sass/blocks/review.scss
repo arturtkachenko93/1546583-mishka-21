@@ -33,7 +33,7 @@
     }
 
     &::after {
-      background-size: cover;
+      background-size: contain;
       height: 17px;
     }
   }
