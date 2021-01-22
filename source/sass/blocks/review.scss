@@ -100,7 +100,7 @@
       content: "";
       width: 350px;
       height: 457px;
-      background-image: url("../img/review.jpg");
+      background-image: url("../img/review-desk.jpg");
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: contain;
@@ -108,7 +108,7 @@
       left: 0;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/review@2x.jpg");
+        background-image: url("../img/review-desk@2x.jpg");
       }
     }
   }
@@ -169,6 +169,14 @@
   cursor: pointer;
   border: 0;
   padding: 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--prev {
     border-right: 1px solid $whisper;

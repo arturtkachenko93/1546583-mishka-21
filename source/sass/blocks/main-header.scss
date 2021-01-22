@@ -167,6 +167,7 @@
     background-image: url("../img/icons/interior.svg");
     top: 20px;
     left: 240px;
+    opacity: 0.5;
   }
 
   &--toys::after {
@@ -178,22 +179,61 @@
     background-image: url("../img/icons/toy.svg");
     top: 20px;
     left: 230px;
+    opacity: 0.5;
   }
 
   &--interior:hover {
     background-color: $light-turquoise;
-    margin-top: -5px;
+    padding-bottom: 36px;
+
+    &::after {
+      top: 15px;
+      opacity: 1;
+    }
   }
 
   &--toys:hover {
     background-color: $darker-turquoise;
-    margin-top: -5px;
+    padding-bottom: 36px;
+
+    &::after {
+      top: 15px;
+      opacity: 0.7;
+    }
+  }
+
+  &--interior:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &--toys:active {
+    &::after {
+     opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
     width: 334px;
     font-size: 20px;
     line-height: 30px;
+
+    &--interior:hover {
+      margin-top: -5px;
+
+      &::after {
+        top: 20px
+      }
+    }
+
+    &--toys:hover {
+      margin-top: -5px;
+
+      &::after {
+        top: 20px
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {

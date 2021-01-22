@@ -420,19 +420,19 @@
 .filter__input-name,
 .filter__input-area {
   width: 100%;
-  color: rgba($black, 0.3);
   font-size: 17px;
+  color: $gray;
   line-height: 18px;
   border: none;
   padding: 0;
 
   &::-webkit-input-placeholder {
     color: rgba($black, 0.3);
-   }
+  }
 
   &::-moz-placeholder {
     color: rgba($black, 0.3);
-   }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
@@ -448,6 +448,10 @@
   position: relative;
   border-bottom: 2px solid $gray;
   padding-bottom: 17px;
+
+  &:hover, &:focus {
+    border-bottom: 2px solid $light-green;
+  }
 
   &--contacts {
     @media (min-width: $tablet-width) {
@@ -482,9 +486,16 @@
   }
 }
 
+.filter__input-name--contacts:hover ~ .filter__input-image,
+.filter__input-name--contacts:active ~ .filter__input-image {
+  fill: $light-green;
+  opacity: 1;
+}
+
 .filter__input-image {
   position: absolute;
   bottom: 15px;
+  opacity: 0.2;
 
   &--phone {
     top: 20px;
@@ -612,14 +623,30 @@
   }
 }
 
+.filter__input-radio, .filter__checkbox {
+  &:hover + label::before {
+    border: 2px solid $light-green;
+  }
+
+  &:focus + label::before {
+    opacity: 0.3;
+  }
+}
+
 .filter__input-area {
   width: 260px;
   height: 142px;
   font-family: inherit;
+  color: black;
+  font-size: 19px;
   border: 2px solid $gray;
   padding: 17px 17px;
   resize: none;
   background-color: transparent;
+
+  &:hover, &:focus {
+    border: 2px solid $light-green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 463px;

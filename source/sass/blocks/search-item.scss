@@ -32,5 +32,14 @@
 }
 
 .search-item__icon {
-  margin-right: 20px;
+  opacity: 0.2;
+}
+
+.search-item__link:hover .search-item__icon {
+  opacity: 1;
+  fill: $lightnes-green;
+}
+
+.search-item__link:active .search-item__icon {
+  opacity: 0.3;
 }

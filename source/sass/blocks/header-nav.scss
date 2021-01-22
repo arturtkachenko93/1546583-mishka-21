@@ -33,6 +33,11 @@
   margin: 0 auto;
   padding: 22px 0;
 
+  &--current {
+    pointer-events: none;
+    cursor: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 113px;
     margin: 0;
@@ -44,6 +49,14 @@
     grid-column: 2 / 3;
     width: 149px;
     padding-top: 9px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

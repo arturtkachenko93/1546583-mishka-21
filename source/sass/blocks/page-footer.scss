@@ -31,6 +31,15 @@
   }
 }
 
+.page-footer__logo:hover .page-footer__logo-icon {
+  opacity: 1;
+  fill: $lightnes-green;
+}
+
+.page-footer__logo:active .page-footer__logo-icon {
+  opacity: 0.3;
+}
+
 .page-footer__social-list {
   @include list-reset;
   display: flex;
@@ -53,6 +62,16 @@
 
   &:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+.page-footer__social-link-icon {
+  &:hover {
+    fill: $darker-turquoise;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

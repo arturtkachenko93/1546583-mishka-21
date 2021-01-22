@@ -131,6 +131,21 @@
   }
 }
 
+.contacts__adress--email {
+  &:hover {
+    color: $darker-turquoise;
+
+    &::after {
+      background-color: $darker-turquoise;
+    }
+  }
+
+  &:active::after {
+    background-color: $darker-turquoise;
+    opacity: 0.1;
+  }
+}
+
 .contacts__map {
   margin-bottom: 35px;
 

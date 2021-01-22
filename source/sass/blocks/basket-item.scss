@@ -19,7 +19,6 @@
     margin: 0;
   }
 
-
   &:hover {
     color: rgba($black, 0.6);
   }
@@ -29,6 +28,16 @@
   }
 }
 
+.basket-item__link:hover .basket-item__icon {
+  opacity: 1;
+  fill: $lightnes-green;
+}
+
+.basket-item__link:active .basket-item__icon {
+  opacity: 0.3;
+}
+
 .basket-item__icon {
+  opacity: 0.2;
   margin-right: 20px;
 }
