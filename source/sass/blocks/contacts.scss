@@ -67,7 +67,7 @@
       background-position: 0 0;
       background-repeat: no-repeat;
       top: 45px;
-      left: 75px;;
+      left: 75px;
     }
   }
 }
@@ -104,21 +104,6 @@
   font-style: normal;
   color: $gray;
 
-  &--email {
-    position: relative;
-
-    &::after {
-      display: block;
-      position: absolute;
-      content: '';
-      width: 179px;
-      height: 1px;
-      background-color: $light-green;
-      top: 26px;
-      left: 0;
-    }
-  }
-
   &--adress {
     @media (min-width: $tablet-width) {
       width: 190px;
@@ -132,6 +117,19 @@
 }
 
 .contacts__adress--email {
+  position: relative;
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 179px;
+    height: 1px;
+    background-color: $light-green;
+    top: 26px;
+    left: 0;
+  }
+
   &:hover {
     color: $darker-turquoise;
 

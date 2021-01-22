@@ -23,7 +23,7 @@
 
   &::after {
     @media (max-width: $mobile-width) {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 75%;
@@ -61,7 +61,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: '';
+      content: "";
       width: 75%;
       height: 1px;
       top: 7px;
@@ -101,7 +101,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: '';
+      content: "";
       width: 75%;
       height: 1px;
       top: 7px;
@@ -161,7 +161,7 @@
     &::after {
       display: block;
       position: absolute;
-      content: '';
+      content: "";
       width: 75%;
       height: 1px;
       top: 7px;
@@ -360,7 +360,7 @@
 
     @media (max-width: $mobile-width) {
       &::after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 75%;
@@ -389,7 +389,7 @@
       &::after {
         display: block;
         position: absolute;
-        content: '';
+        content: "";
         width: 69%;
         height: 1px;
         top: 7px;
@@ -449,7 +449,8 @@
   border-bottom: 2px solid $gray;
   padding-bottom: 17px;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     border-bottom: 2px solid $light-green;
   }
 
@@ -465,7 +466,7 @@
   }
 
   &--nobgcolor {
-      @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       width: 339px;
       padding: 17px 18px;
     }
@@ -623,7 +624,8 @@
   }
 }
 
-.filter__input-radio, .filter__checkbox {
+.filter__input-radio,
+.filter__checkbox {
   &:hover + label::before {
     border: 2px solid $light-green;
   }
@@ -644,7 +646,8 @@
   resize: none;
   background-color: transparent;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     border: 2px solid $light-green;
   }
 
@@ -683,7 +686,7 @@
   height: 17px;
   top: 11px;
   left: -52px;
-  background-image: url('../img/icons/active.svg');
+  background-image: url("../img/icons/active.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 

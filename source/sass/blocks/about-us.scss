@@ -1,6 +1,4 @@
 .about-us {
-
-
   @media (min-width: $desktop-width) {
     position: relative;
 
@@ -84,16 +82,13 @@
   &::before {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 33px;
     height: 38px;
     background-image: url("../img/icons/icon-1.svg");
     background-repeat: no-repeat;
     top: 25px;
     left: 5px;
-  }
-
-  @media (min-width: $tablet-width) {
   }
 }
 
@@ -104,7 +99,7 @@
   &::before {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 47px;
     height: 27px;
     background-image: url("../img/icons/icon-2.svg");
@@ -125,7 +120,7 @@
   &::before {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 34px;
     height: 27px;
     background-image: url("../img/icons/icon-3.svg");
@@ -147,7 +142,7 @@
   &::before {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 35px;
     height: 34px;
     background-image: url("../img/icons/icon-4.svg");
@@ -166,7 +161,7 @@
   width: 250px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     width: 55px;
@@ -190,7 +185,7 @@
   &::before {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 33px;
     height: 32px;
     background-image: url("../img/icons/icon-6.svg");

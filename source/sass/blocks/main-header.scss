@@ -161,7 +161,7 @@
   &--interior::after {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 40px;
     height: 62px;
     background-image: url("../img/icons/interior.svg");
@@ -173,7 +173,7 @@
   &--toys::after {
     display: block;
     position: absolute;
-    content: '';
+    content: "";
     width: 60px;
     height: 60px;
     background-image: url("../img/icons/toy.svg");
@@ -210,7 +210,7 @@
 
   &--toys:active {
     &::after {
-     opacity: 0.3;
+      opacity: 0.3;
     }
   }
 
@@ -223,7 +223,7 @@
       margin-top: -5px;
 
       &::after {
-        top: 20px
+        top: 20px;
       }
     }
 
@@ -231,7 +231,7 @@
       margin-top: -5px;
 
       &::after {
-        top: 20px
+        top: 20px;
       }
     }
   }

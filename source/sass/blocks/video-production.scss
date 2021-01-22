@@ -11,12 +11,12 @@
     margin-bottom: 105px;
   }
 
-    &:hover {
-      box-shadow: 0 6px 10px rgba($black, 0.1);
+  &:hover {
+    box-shadow: 0 6px 10px rgba($black, 0.1);
+  }
 
-    &:active {
-      box-shadow: 0 3px 5px rgba($black, 0.1);
-    }
+  &:active {
+    box-shadow: 0 3px 5px rgba($black, 0.1);
   }
 }
 
@@ -28,7 +28,7 @@
   padding-bottom: 33px;
   border: 1px solid $whisper;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 46px;
   }
@@ -145,17 +145,17 @@
   cursor: pointer;
   transform: translate(-50%, -50%);
 
-    &:hover svg {
-      width: 121px;
-      height: 97px;
-      transition: .3s;
+  &:hover svg {
+    width: 121px;
+    height: 97px;
+    transition: 0.3s;
+  }
 
-    &:active {
-      width: 81px;
-      height: 57px;
-      opacity: 0.3;
-      transition: .3s;
-    }
+  &:active {
+    width: 81px;
+    height: 57px;
+    opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
