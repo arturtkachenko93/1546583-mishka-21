@@ -100,7 +100,7 @@
       content: "";
       width: 350px;
       height: 457px;
-      background-image: url("../../img/review.jpg");
+      background-image: url("../img/review.jpg");
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: contain;
@@ -108,7 +108,7 @@
       left: 0;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/review@2x.jpg");
+        background-image: url("../img/review@2x.jpg");
       }
     }
   }

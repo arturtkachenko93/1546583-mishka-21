@@ -16,6 +16,11 @@
 .page-footer__logo {
   display: none;
 
+  &--current {
+    cursor: default;
+    pointer-events: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     margin-right: 122px;
