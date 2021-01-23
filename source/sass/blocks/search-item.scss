@@ -18,6 +18,8 @@
 
   &--hidden {
     @media (min-width: $tablet-width) {
+      display: flex;
+      min-height: 88px;
       font-size: 0;
     }
   }
@@ -33,6 +35,11 @@
 
 .search-item__icon {
   opacity: 0.2;
+  margin-right: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
 }
 
 .search-item__link:hover .search-item__icon {

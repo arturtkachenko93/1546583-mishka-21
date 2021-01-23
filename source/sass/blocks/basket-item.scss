@@ -10,12 +10,7 @@
     display: block;
     min-width: auto;
     text-align: end;
-    padding: 32px 50px 29px 29px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 32px 50px 33px 30px;
+    padding: 33px 55px 29px 29px;
     margin: 0;
   }
 
@@ -40,4 +35,8 @@
 .basket-item__icon {
   opacity: 0.2;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
 }
