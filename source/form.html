@@ -87,7 +87,7 @@
         <div class="filter__color-type-wrapper">
           <legend class="filter__title filter__title--bgcolor">Цвет</legend>
           <ul class="filter__list filter__list--color">
-            <li class="filter__item filter__item--color">
+            <li class="filter__item filter__item--color filter__item--color-padding">
               <input class="visually-hidden filter__checkbox" type="checkbox" name="white" id="white" checked>
               <label class="filter__label filter__label--color" for="white">Белый</label>
             </li>
@@ -95,7 +95,7 @@
               <input class="visually-hidden filter__checkbox" type="checkbox" name="gray" id="gray" checked>
               <label class="filter__label filter__label--color" for="gray">Серый</label>
             </li>
-            <li class="filter__item filter__item--color">
+            <li class="filter__item filter__item--color filter__item--color-padding">
               <input class="visually-hidden filter__checkbox" type="checkbox" name="tiffany" id="tiffany">
               <label class="filter__label filter__label--color" for="tiffany">«Тиффани»</label>
             </li>
@@ -103,7 +103,7 @@
               <input class="visually-hidden filter__checkbox" type="checkbox" name="black" id="black">
               <label class="filter__label filter__label--color" for="black">Черный</label>
             </li>
-            <li class="filter__item filter__item--color">
+            <li class="filter__item filter__item--color filter__item--color-padding">
               <input class="visually-hidden filter__checkbox" type="checkbox" name="pink" id="pink">
               <label class="filter__label filter__label--color" for="pink">Розовый</label>
             </li>
@@ -144,8 +144,8 @@
               </svg>
             </li>
             <li class="filter__item filter__item--contacts filter__item--contacts-email">
-              <label class="filter__title filter__title--contacts" for="email">E-mail</label>
-              <input class="filter__input-name filter__input-name--contacts" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+              <label class="filter__title filter__title--contacts filter__title--contacts-email" for="email">E-mail</label>
+              <input class="filter__input-name filter__input-name--contacts filter__input-name--contacts-email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
               <svg class="filter__input-image filter__input-image--mail" width="32" height="21">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
@@ -154,7 +154,7 @@
         </div>
       </fieldset>
       <div class="filter__inner-form">
-        <label class="filter__title filter__title--area" for="comment-field">Доп</label>
+        <label class="filter__title filter__title--area filter__title--area-dop" for="comment-field">Доп</label>
         <textarea class="filter__input-area" name="comment" id="comment-field" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
       <div class="filter__wrapper-button">

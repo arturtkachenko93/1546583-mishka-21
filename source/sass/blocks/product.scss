@@ -1,5 +1,6 @@
 .product {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     padding-top: 67px;
@@ -22,6 +23,8 @@
 }
 
 .product__item {
+  margin-bottom: 31px;
+
   &:nth-child(3n) {
     @media (min-width: $desktop-width) {
       margin-right: 0;
@@ -29,7 +32,7 @@
   }
 
   &:nth-child(3) .product__product-title {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
 
   &:last-child {
@@ -68,7 +71,7 @@
 .product__item-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 27px 28px;
+  padding: 29px 24px 21px 27px;
   border: 1px solid $whisper;
 
   @media (min-width: $tablet-width) {
@@ -114,9 +117,11 @@
 }
 
 .product__product-link-title {
+  display: block;
   font-size: 17px;
   line-height: 24px;
   color: $black;
+  margin-bottom: 7px;
 
   &:hover {
     opacity: 0.6;
@@ -185,7 +190,7 @@
 .product__price {
   width: 110px;
   font-size: 15px;
-  margin-right: 71px;
+  margin-right: 75px;
 
   @media (min-width: $tablet-width) {
     width: 190px;
