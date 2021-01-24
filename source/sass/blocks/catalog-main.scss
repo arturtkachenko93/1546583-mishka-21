@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 57px 100px 63px 100px;
+    padding: 57px 100px 85px 100px;
 
     &::after {
       position: absolute;
@@ -14,17 +14,19 @@
       height: 24px;
       background-image: url("../img/zigzag-fill.svg");
       background-repeat: repeat-x;
-      bottom: -10px;
+      bottom: -1px;
       left: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 113px 300px 77px 300px;
+    padding: 101px 300px 113px 327px;
     margin-top: -113px;
 
     &::after {
       height: 34px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      bottom: -1px;
     }
   }
 }
@@ -36,7 +38,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 400px;
+    width: 377px;
     font-size: 43px;
     line-height: 50px;
   }

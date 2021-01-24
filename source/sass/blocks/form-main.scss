@@ -31,11 +31,13 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 101px;
-    padding-bottom: 79px;
-    margin-bottom: 99px;
+    padding-bottom: 94px;
+    margin-bottom: 117px;
 
     &::after {
       height: 34px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+      bottom: -18px;
     }
   }
 }

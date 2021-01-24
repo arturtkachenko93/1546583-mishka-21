@@ -1,0 +1,123 @@
+.modal__cart {
+  display: none;
+  position: absolute;
+  top: 320px;
+  right: 0;
+  left: 0;
+  width: 320px;
+  border: 1px solid $modal-white;
+  background-color: $white;
+  box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+  padding-top: 29px;
+  padding-bottom: 46px;
+  position: fixed;
+  z-index: 200;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding-top: 38px;
+  }
+
+  &--opened {
+    display: block;
+  }
+}
+
+.modal__cart-title {
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 381px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__cart-desc {
+  width: 146px;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.modal__cart-form {
+  display: block;
+}
+
+.modal__cart-list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 25px;
+  margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+  }
+}
+
+.modal__cart-item {
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba($gray, 0.1);
+}
+
+.modal__cart-label {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 17px;
+  line-height: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.modal__cart-input:checked + .modal__cart-label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -1px;
+  left: -1px;
+  border: 2px solid $lightnes-green;
+}
+
+.modal__cart-input:hover + .modal__cart-label::before {
+  border: 2px solid rgba($gray, 0.3);
+}
+
+.modal__cart-button {
+  font-family: "Open Sans";
+  font-size: 17px;
+  font-weight: 700;
+  color: $white;
+  background-color: $lightnes-green;
+  border: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $darker-turquoise;
+  }
+}
