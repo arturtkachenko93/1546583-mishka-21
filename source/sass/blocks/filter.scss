@@ -473,10 +473,6 @@
     color: rgba($black, 0.3);
   }
 
-  &::placeholder {
-    color: rgba($black, 0.3);
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 19px;
     background-color: $smoke-white;
@@ -766,7 +762,7 @@
     height: 22px;
     top: 16px;
     left: -71px;
-    background-image: url("../../img/icons/active-tablet.svg");
+    background-image: url("../img/icons/active-tablet.svg");
   }
 
   @media (min-width: $desktop-width) {
