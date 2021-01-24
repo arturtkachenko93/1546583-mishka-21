@@ -14,7 +14,7 @@
 <body class="page__body">
   <header class="page__header page-header page-header--noindex">
     <div class="page-header__wrapper">
-      <button class="page-header__toogle" type="button">
+      <button class="page-header__toogle-nojs" type="button">
         <span class="visually-hidden">Открыть меню сайта</span>
       </button>
     </div>
@@ -210,6 +210,29 @@
       </div>
     </div>
   </footer>
+
+  <section class="modal modal__cart">
+    <h2 class="modal__cart-title">Добавить в корзину</h2>
+    <p class="modal__cart-desc">Выберите размер:</p>
+    <form class="modal__cart-form" method="post" action="https://echo.htmlacademy.ru">
+      <ul class="modal__cart-list">
+        <li class="modal__cart-item">
+          <input class="modal__cart-input visually-hidden" type="radio" name="size" id="S" checked>
+          <label class="modal__cart-label" for="S">S</label>
+        </li>
+        <li class="modal__cart-item">
+          <input class="modal__cart-input visually-hidden" type="radio" name="size" id="M">
+          <label class="modal__cart-label" for="M">M</label>
+        </li>
+        <li class="modal__cart-item">
+          <input class="modal__cart-input visually-hidden" type="radio" name="size" id="L">
+          <label class="modal__cart-label" for="L">L</label>
+        </li>
+      </ul>
+      <button class="modal__cart-button button" type="submit">Добавить</button>
+    </form>
+  </section>
+  <div class="page__background-modal"></div>
 
   <script src="js/script.min.js"></script>
 </body>

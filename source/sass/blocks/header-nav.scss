@@ -16,6 +16,10 @@
       grid-template-rows: min-content 114px;
     }
   }
+
+  &--opened {
+    display: block;
+  }
 }
 
 .header-nav--closed .header-nav__list,

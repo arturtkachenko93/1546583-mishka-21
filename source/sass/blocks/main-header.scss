@@ -151,6 +151,7 @@
   position: relative;
   box-sizing: border-box;
   width: 320px;
+  height: 100%;
   margin: 0 auto;
   font-size: 19px;
   color: $white;
@@ -183,20 +184,16 @@
 
   &--interior:hover {
     background-color: $light-turquoise;
-    padding-bottom: 36px;
 
     &::after {
-      top: 15px;
       opacity: 1;
     }
   }
 
   &--toys:hover {
     background-color: $darker-turquoise;
-    padding-bottom: 36px;
 
     &::after {
-      top: 15px;
       opacity: 0.7;
     }
   }
@@ -234,7 +231,7 @@
     }
 
     &--interior:hover {
-      margin-top: -5px;
+      transform: translateY(-5px);
 
       &::after {
         top: 20px;
@@ -242,10 +239,26 @@
     }
 
     &--toys:hover {
-      margin-top: -5px;
+      transform: translateY(-5px);
 
       &::after {
         top: 20px;
+      }
+    }
+
+    &--interior:active {
+      transform: translateY(0);
+
+      &::after {
+        top: 30px;
+      }
+    }
+
+    &--toys:active {
+      transform: translateY(0);
+
+      &::after {
+        top: 30px;
       }
     }
   }

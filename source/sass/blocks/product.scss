@@ -52,7 +52,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
+    flex-wrap: nowrap;
+    flex-direction: column;
     margin-right: 48px;
     width: 316px;
     margin-bottom: 0;
@@ -83,6 +84,7 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    height: 100%;
     position: relative;
     padding: 23px 30px 26px 28px;
   }

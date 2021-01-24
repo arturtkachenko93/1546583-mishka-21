@@ -88,8 +88,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    padding-top: 49px;
-    padding-bottom: 52px;
+    padding-top: 50px;
+    padding-bottom: 49px;
   }
 }
 
@@ -150,7 +150,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1050px;
-    padding-top: 41px;
+    padding-top: 43px;
   }
 }
 
@@ -313,6 +313,10 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 92px;
+    }
   }
 
   &--color {
@@ -324,8 +328,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(3, 1fr);
-      width: 875px;
+      grid-template-columns: 261px 265px 260px;
+      padding-left: 95px;
     }
   }
 
@@ -336,6 +340,7 @@
 
     @media (min-width: $desktop-width) {
       width: 700px;
+      padding-left: 0;
     }
   }
 }
@@ -363,7 +368,7 @@
 
     @media (min-width: $desktop-width) {
       width: 325px;
-      padding-left: 92px;
+      padding: 0;
     }
   }
 
@@ -436,6 +441,7 @@
 
     @media (min-width: $desktop-width) {
       width: 170px;
+      padding: 0;
     }
   }
 
@@ -445,32 +451,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 95px;
+      padding: 0;
     }
   }
-}
 
-.filter__item--color {
   @media (min-width: $desktop-width) {
-    &:nth-child(2) {
-      padding-left: 65px;
-    }
-
-    &:nth-child(3) {
-      padding-left: 37px;
-    }
-
-    &:nth-child(4) {
-      padding-left: 94px;
-    }
-
-    &:nth-child(5) {
-      padding-left: 65px;
-    }
-
-    &:nth-child(6) {
-      padding-left: 38px;
-    }
+    padding: 0;
   }
 }
 
@@ -483,11 +469,11 @@
   border: none;
   padding: 0;
 
-  &::-webkit-input-placeholder {
+  &::placeholder {
     color: rgba($black, 0.3);
   }
 
-  &::-moz-placeholder {
+  &::placeholder {
     color: rgba($black, 0.3);
   }
 
@@ -509,6 +495,7 @@
   &:hover,
   &:focus {
     border-bottom: 2px solid $light-green;
+    outline: none;
   }
 
   &--contacts {
@@ -561,7 +548,7 @@
 }
 
 .filter__input-name--contacts:hover ~ .filter__input-image,
-.filter__input-name--contacts:active ~ .filter__input-image {
+.filter__input-name--contacts:focus ~ .filter__input-image {
   fill: $light-green;
   opacity: 1;
 }
@@ -705,6 +692,10 @@
   }
 
   &:focus + label::before {
+    border: 2px solid $light-green;
+  }
+
+  &:active + label::before {
     opacity: 0.3;
   }
 }
@@ -752,6 +743,10 @@
     top: 0;
     left: -82px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -2px;
+  }
 }
 
 .filter__checkbox:checked + label::after {
@@ -772,6 +767,10 @@
     top: 16px;
     left: -71px;
     background-image: url("../../img/icons/active-tablet.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 12px;
   }
 }
 
@@ -813,6 +812,7 @@
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 230px;

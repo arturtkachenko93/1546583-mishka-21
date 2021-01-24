@@ -39,33 +39,34 @@
   margin: 0 auto;
 }
 
-.page-header__toogle {
+.page-header__toogle-nojs {
+  display: none;
   position: absolute;
-  background-image: url("../img/icons/menu-close.svg");
+  background-image: url("../img/icons/menu.svg");
   background-color: transparent;
   background-repeat: no-repeat;
   top: 30px;
   right: 30px;
-  width: 21px;
-  height: 20px;
+  width: 20px;
+  height: 14px;
   border: 0;
   cursor: pointer;
 
   &--opened {
     position: absolute;
-    background-image: url("../img/icons/menu.svg");
+    background-image: url("../img/icons/menu-close.svg");
     background-color: transparent;
     top: 30px;
     right: 30px;
-    width: 20px;
-    height: 14px;
+    width: 21px;
+    height: 20px;
     border: 0;
     cursor: pointer;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
+}
+
+.page-header__toogle {
+  display: block;
 
   @media (min-width: $tablet-width) {
     display: none;
