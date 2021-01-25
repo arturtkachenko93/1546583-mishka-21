@@ -122,7 +122,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 45px;
+    padding-top: 48px;
     padding-bottom: 50px;
   }
 
@@ -431,7 +431,7 @@
 
   &--color {
     padding-left: 60px;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     @media (min-width: $tablet-width) {
       width: 122px;
@@ -788,7 +788,7 @@
   font-weight: 400;
   font-style: normal;
   color: $gray;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -802,7 +802,7 @@
 .filter__wrapper-button {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 55px;
+  margin-bottom: 57px;
 
   @media (min-width: $tablet-width) {
     width: 668px;

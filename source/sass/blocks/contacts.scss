@@ -32,7 +32,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     grid-template-columns: 78px 256px 78px 256px;
-    padding-top: 53px;
+    padding-top: 56px;
     padding-bottom: 49px;
 
     &::before {
@@ -171,7 +171,7 @@
 .contacts__map {
   position: relative;
   height: 454px;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
   background-color: $lightnes-gray;
 
   @media (min-width: $tablet-width) {
