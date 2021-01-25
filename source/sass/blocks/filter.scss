@@ -55,7 +55,7 @@
 
 .filter__color-type {
   position: relative;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   @media (max-width: $mobile-width) {
     &::after {
@@ -95,7 +95,7 @@
 
 .filter__personal {
   position: relative;
-  margin-bottom: 34px;
+  margin-bottom: 36px;
 
   @media (max-width: $mobile-width) {
     &::after {
@@ -122,7 +122,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding-top: 47px;
+    padding-top: 45px;
     padding-bottom: 50px;
   }
 
@@ -210,7 +210,7 @@
   }
 
   &--bgcolor {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
       background-color: $smoke-white;
@@ -275,7 +275,7 @@
   }
 
   &--contacts {
-    margin-bottom: 24px;
+    margin-bottom: 19px;
     font-size: 17px;
 
     @media (min-width: $tablet-width) {
@@ -486,7 +486,7 @@
 .filter__input-name {
   position: relative;
   border-bottom: 2px solid $gray;
-  padding-bottom: 12px;
+  padding-bottom: 11px;
 
   &:hover,
   &:focus {
@@ -512,7 +512,8 @@
   &--nobgcolor {
     @media (min-width: $tablet-width) {
       width: 339px;
-      padding: 16px 18px;
+      padding: 16px 18px 16px 18px;
+
       font-size: 19px;
       line-height: 17px;
     }
@@ -527,6 +528,7 @@
       width: 392px;
       font-size: 20px;
       line-height: 23px;
+      padding: 16px 18px 16px 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -534,7 +536,17 @@
     }
   }
 
+  &--tel {
+    padding-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 6px;
+    }
+  }
+
   &--contacts-email {
+    padding-bottom: 16px;
+
     @media (min-width: $tablet-width) {
       font-size: 19px;
       padding-top: 0;

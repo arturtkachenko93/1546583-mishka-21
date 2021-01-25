@@ -7,7 +7,7 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    padding-top: 51px;
+    padding-top: 50px;
     padding-bottom: 58px;
   }
 }
@@ -45,7 +45,8 @@
   flex-wrap: wrap;
   align-items: baseline;
   width: 142px;
-  padding: 23px 0;
+  padding-top: 21px;
+  padding-bottom: 14px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -85,8 +86,7 @@
   justify-content: center;
   width: 260px;
   border-top: 1px solid rgba($black, 0.1);
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 20px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
