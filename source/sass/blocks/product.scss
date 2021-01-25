@@ -1,14 +1,16 @@
 .product {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 67px;
+    padding-top: 66px;
     padding-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 111px;
-    padding-bottom: 0px;
+    padding-top: 73px;
+    padding-bottom: 0;
+    margin-bottom: 54px;
   }
 }
 
@@ -22,6 +24,8 @@
 }
 
 .product__item {
+  margin-bottom: 31px;
+
   &:nth-child(3n) {
     @media (min-width: $desktop-width) {
       margin-right: 0;
@@ -29,7 +33,7 @@
   }
 
   &:nth-child(3) .product__product-title {
-    margin-bottom: 10px;
+    margin-bottom: 1px;
   }
 
   &:last-child {
@@ -37,23 +41,23 @@
       padding-bottom: 0;
       margin-bottom: 0;
     }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 54px;
-    }
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    width: 668px;
+    width: 666px;
     border: 1px solid $lightnes-gray;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 47px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-right: 48px;
     width: 316px;
+    margin-bottom: 0;
+    margin-top: 39px;
   }
 
   &:hover {
@@ -68,19 +72,27 @@
 .product__item-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 27px 28px;
+  padding: 29px 24px 25px 27px;
   border: 1px solid $whisper;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     border: 0;
+    padding-top: 27px;
     padding-left: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 462px;
+    width: auto;
+    height: 100%;
     position: relative;
-    padding: 27px 30px 26px 28px;
+    padding: 25px 30px 24px 28px;
+  }
+
+
+  &--third {
+    padding-top: 25px;
+    padding-bottom: 26px;
   }
 }
 
@@ -91,16 +103,15 @@
   @media (min-width: $tablet-width) {
     width: 237px;
     margin: 0;
-    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
     width: 230px;
-    margin-bottom: 6px;
   }
 }
 
-.product__product-image {
+.product__product-image,
+.product__product-image-pic {
   @media (min-width: $tablet-width) {
     display: block;
     width: 333px;
@@ -114,12 +125,32 @@
 }
 
 .product__product-link-title {
+  display: block;
   font-size: 17px;
   line-height: 24px;
   color: $black;
+  margin-bottom: 5px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &--margin {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -134,7 +165,7 @@
   @media (min-width: $tablet-width) {
     width: 215px;
     font-size: 15px;
-    margin-bottom: 192px;
+    margin-bottom: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,11 +174,21 @@
 
   &--third {
     @media (min-width: $tablet-width) {
-      margin-bottom: 167px;
+      margin-bottom: 174px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 37px;
+    }
+  }
+
+  &--margin {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 194px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 61px;
     }
   }
 }
@@ -162,14 +203,14 @@
     margin-top: auto;
 
     &::before {
-      content: '';
       display: block;
       position: absolute;
+      content: "";
       height: 1px;
       background-color: $whisper;
       width: 100%;
       left: 0;
-      top: -25px;
+      top: -27px;
     }
   }
 }
@@ -177,17 +218,31 @@
 .product__price {
   width: 110px;
   font-size: 15px;
-  margin-right: 71px;
+  margin-right: 75px;
 
   @media (min-width: $tablet-width) {
     width: 190px;
     font-size: 17px;
+    padding-left: 2px;
     margin-right: 56px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 10px;
   }
+}
+
+.product__add-in-basket-icon {
+  opacity: 0.2;
+}
+
+.product__add-in-basket:hover .product__add-in-basket-icon {
+  fill: $lightnes-green;
+  opacity: 1;
+}
+
+.product__add-in-basket:active .product__add-in-basket-icon {
+  opacity: 0.3;
 }
 
 .product__product-link {
@@ -199,6 +254,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 462px;
+    height: auto;
   }
 }

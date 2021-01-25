@@ -1,9 +1,10 @@
 .feedback__text {
+  width: 265px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -16,24 +17,42 @@
     width: 806px;
     padding-right: 75px;
     margin-bottom: 44px;
+    z-index: 1;
+
+    & br {
+      display: none;
+    }
   }
 }
 
 .feedback__author-name {
   display: inline-block;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 18px;
+    z-index: 1;
+    font-size: 17px;
   }
 }
 
 .feedback__author-contact {
   line-height: 30px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 1;
+  }
 }
 
 .feedback__slide {

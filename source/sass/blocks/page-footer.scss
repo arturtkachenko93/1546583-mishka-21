@@ -7,14 +7,18 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    padding-top: 51px;
+    padding-top: 50px;
     padding-bottom: 58px;
   }
 }
 
 .page-footer__logo {
   display: none;
+
+  &--current {
+    cursor: default;
+    pointer-events: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -26,29 +30,54 @@
   }
 }
 
+.page-footer__logo:hover .page-footer__logo-icon {
+  opacity: 1;
+  fill: $lightnes-green;
+}
+
+.page-footer__logo:active .page-footer__logo-icon {
+  opacity: 0.3;
+}
+
 .page-footer__social-list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  align-items: baseline;
   width: 142px;
-  padding: 25px 0;
+  padding-top: 21px;
+  padding-bottom: 14px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 142px;
     margin: 0;
+    margin-right: 42px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 234px;
   }
 }
 
 .page-footer__social-item {
   margin-right: 41px;
+  margin-bottom: 10px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
-.page-footer__social-item:nth-child(3n) {
-  margin-right: 0;
+.page-footer__social-link-icon {
+  &:hover {
+    fill: $darker-turquoise;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__wrapper-desc {
@@ -57,7 +86,7 @@
   justify-content: center;
   width: 260px;
   border-top: 1px solid rgba($black, 0.1);
-  padding-top: 29px;
+  padding: 20px 20px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -71,7 +100,11 @@
 .page-footer__desc {
   font-size: 19px;
   line-height: 18px;
-  padding-top: 5px;
+  align-self: center;
   margin: 0;
-  margin-right: 31px;
+  margin-right: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }

@@ -10,15 +10,9 @@
     display: block;
     min-width: auto;
     text-align: end;
-    padding: 32px 50px 29px 29px;
+    padding: 32px 55px 29px 29px;
     margin: 0;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 32px 50px 33px 30px;
-    margin: 0;
-  }
-
 
   &:hover {
     color: rgba($black, 0.6);
@@ -29,6 +23,20 @@
   }
 }
 
+.basket-item__link:hover .basket-item__icon {
+  opacity: 1;
+  fill: $lightnes-green;
+}
+
+.basket-item__link:active .basket-item__icon {
+  opacity: 0.3;
+}
+
 .basket-item__icon {
+  opacity: 0.2;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
 }
