@@ -23,6 +23,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    &::before {
+      top: 89px;
+    }
+
     &--noindex {
       background-image: none;
     }

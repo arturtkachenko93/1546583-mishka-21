@@ -33,6 +33,7 @@
     }
 
     &::after {
+      background-image: url("../img/zigzag-line-desktop.svg");
       background-size: contain;
       height: 17px;
       bottom: 15px;
@@ -53,7 +54,7 @@
 }
 
 .review__feedback {
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     padding-top: 36px;
@@ -82,7 +83,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 106px;
+    padding-top: 104px;
     padding-bottom: 115px;
   }
 
@@ -119,7 +120,7 @@
   font-size: 25px;
   line-height: 34px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -142,7 +143,7 @@
 .review__button-wrapper {
   display: flex;
   border: 1px solid $whisper;
-  margin-bottom: 38px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
