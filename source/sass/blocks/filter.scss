@@ -692,7 +692,7 @@
   }
 
   &:active + label::before {
-    opacity: 0.3;
+    border: 2px solid rgba($gray, 0.3);
   }
 }
 

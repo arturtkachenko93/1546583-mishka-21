@@ -232,34 +232,18 @@
 
     &--interior:hover {
       transform: translateY(-5px);
-
-      &::after {
-        top: 20px;
-      }
     }
 
     &--toys:hover {
       transform: translateY(-5px);
-
-      &::after {
-        top: 20px;
-      }
     }
 
     &--interior:active {
       transform: translateY(0);
-
-      &::after {
-        top: 30px;
-      }
     }
 
     &--toys:active {
       transform: translateY(0);
-
-      &::after {
-        top: 30px;
-      }
     }
   }
 
