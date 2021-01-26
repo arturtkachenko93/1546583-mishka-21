@@ -73,6 +73,9 @@
           <li class="product__item">
             <a class="product__product-link" href="#">
               <picture class="product__product-image-pic">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-1-mobile 1x, img/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-1-tablet 1x, img/photo-1-tablet@2x.jpg 2x">
                 <img class="product__product-image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg" width="260" height="195" alt="Фотография игрушки Зайчик-попрыгайчик">
@@ -97,6 +100,9 @@
           <li class="product__item">
             <a class="product__product-link" href="#">
               <picture class="product__product-image-pic">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-2-mobile 1x, img/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                 <img class="product__product-image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg" width="260" height="195" alt="Фотография корзинки для белья">
@@ -121,6 +127,9 @@
           <li class="product__item">
             <a class="product__product-link" href="#">
               <picture class="product__product-image-pic">
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-3-mobile 1x, img/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1150px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                 <img class="product__product-image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg" width="260" height="195" alt="Фотография корзинки для игрушек">
@@ -149,13 +158,16 @@
           <h2 class="video-production__title">Процесс производства</h2>
           <div class="video-production__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video-production__image" src="img/video-mobile.jpg"  srcset="img/video-mobile@2x.jpg" width="260" height="150" alt="Картинка-превью производства">
             </picture>
             <button class="video-production__play-button">
               <span class="visually-hidden">Кнопка воспроизведения видео</span>
-              <svg class="video-production__image-play" width="101" height="77">
+              <svg class="video-production__image-play" width="100" height="76">
                 <use xlink:href="img/sprite.svg#video-play"></use>
               </svg>
             </button>

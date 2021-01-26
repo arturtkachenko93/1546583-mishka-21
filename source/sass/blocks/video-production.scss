@@ -155,13 +155,25 @@
   cursor: pointer;
   transform: translate(-50%, -50%);
 
+  &:focus {
+    outline: none;
+    border: 2px solid rgba($black, 0.8);
+    border-radius: 26px;
+  }
+
+  &:active {
+    outline: none;
+    border: none;
+  }
+
+
   &:hover svg {
     width: 121px;
     height: 97px;
     transition: 0.3s;
   }
 
-  &:active {
+  &:active svg {
     width: 81px;
     height: 57px;
     opacity: 0.3;
